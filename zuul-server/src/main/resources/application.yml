@@ -1,0 +1,21 @@
+server:
+  port: 5555
+spring:
+  application:
+    name: zuul-server
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+      #\u7F51\u5173\u8F6C\u53D1\u914D\u7F6E\u670D\u52A1-\u6211\u8FD9\u91CC\u6307\u5B9Ahttp\u8BF7\u6C42\u4E3A/enters\u7684 \u6240\u6709\u8BF7\u6C42\u90FD\u8F6C\u53D1 euter-server\u670D\u52A1
+    register-with-eureka: true
+    fetch-registry: true
+zuul:
+  routes:
+    enters:
+      path: /enters/**
+      serviceId: enter-server
+
+  #prefix: /api ->\u591A\u670D\u52A1\u8BF7\u6C42\u4E4B\u524D\u914D\u7F6E\u7EDF\u4E00\u8BF7\u6C42\u524D\u7F00
