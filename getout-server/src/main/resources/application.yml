@@ -1,0 +1,21 @@
+server:
+  port: 8763
+spring:
+  application:
+    name: getout-server
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: 123456
+    url: jdbc:mysql://localhost:3306/microservices?characterEncoding=utf-8
+    # sql is update
+    jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/

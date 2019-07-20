@@ -1,5 +1,5 @@
 server:
-  port: 5555
+  port: 5656
 spring:
   application:
     name: zuul-server
@@ -9,13 +9,26 @@ eureka:
   client:
     service-url:
       defaultZone: http://localhost:8761/eureka/
-      #\u7F51\u5173\u8F6C\u53D1\u914D\u7F6E\u670D\u52A1-\u6211\u8FD9\u91CC\u6307\u5B9Ahttp\u8BF7\u6C42\u4E3A/enters\u7684 \u6240\u6709\u8BF7\u6C42\u90FD\u8F6C\u53D1 euter-server\u670D\u52A1
-    register-with-eureka: true
-    fetch-registry: true
+  register-with-eureka: true
+  fetch-registry: true
 zuul:
   routes:
-    enters:
+    enter:
       path: /enters/**
       serviceId: enter-server
-
-  #prefix: /api ->\u591A\u670D\u52A1\u8BF7\u6C42\u4E4B\u524D\u914D\u7F6E\u7EDF\u4E00\u8BF7\u6C42\u524D\u7F00
+    getout:
+      path: /getout/**
+      serviceId: getout-server
+#6\u79D2\u949F\u53D1\u8D77\u7194\u65AD\u54CD\u5E94
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000 #\u5355\u4F4D \u6BEB\u79D2->
+ribbon:
+  #\u6B63\u5E38\u60C5\u51B5\u4E0B\uFF0C\u5F53\u5BA2\u6237\u7AEF\u5411\u670D\u52A1\u5668\u7AEF\u53D1\u9001\u8BF7\u6C42\u65F6,\u5982\u679C\u7F51\u7EDC\u5F88\u5DEE,\u5C31\u4F1A\u65E0\u6CD5\u54CD\u5E94\u5185\u5BB9,\u8FD9\u91CC\u53EF\u4EE5\u8BBE\u7F6E\u4E3A1\u5206\u949F,\u5982\u679C1\u5206\u949F\u8BBF\u95EE\u4E0D\u5230\u5219\u629B\u51FA\u8D85\u65F6\u5F02\u5E38
+  ReadTimeout: 60000
+  #\u8FD9\u4E2A\u6307\u5EFA\u7ACB\u8FDE\u63A5\u6240\u7528\u7684\u65F6\u95F4,\u9002\u5E94\u4E8E\u7F51\u7EDC\u6B63\u5E38\u60C5\u51B5\u4E0B\uFF0C\u5982\u679C1\u5206\u949F\u672A\u5EFA\u7ACB\u8FDE\u63A5,\u629B\u51FA\u5F02\u5E38
+  ConnectTimeout: 60000

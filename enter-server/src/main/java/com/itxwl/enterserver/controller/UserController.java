@@ -76,17 +76,21 @@ public class UserController {
         return  map;
     }
 
-    @GetMapping(value = "selectAll")
+    /**
+     * 查询
+     * @param
+     * @return
+     */
+    @GetMapping(value = "/selectAll")
     //Page<List<User>>
-    public Object selectAll(@PageableDefault(sort = {"id"},direction = Sort.Direction.DESC) Pageable pageable){
+    public List<User> selectAll(){
         List<User> userList=null;
         try {
              userList= userService.selectAll();
         } catch (Exception e) {
-            Map<String,String> map=new HashMap<>();
-            map.put("error","查询失败!");
-            return map;
+             throw  new RuntimeException(e.getMessage());
         }
+        System.out.println(userList.toString());
         return userList;
     }
 
