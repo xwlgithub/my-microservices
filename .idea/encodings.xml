@@ -4,7 +4,10 @@
     <file url="file://$PROJECT_DIR$/enter-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/getout-server" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/zuul-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security-server" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security-server-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/security-server/sercurity-server-api" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/securityserverapi" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zuul-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/zuul-server/src/main/resources/application.yml" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />

@@ -7,8 +7,10 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="zuul-server" />
-        <module name="getout-server" />
+        <module name="security-server-api" />
         <module name="enter-server" />
+        <module name="security-server" />
+        <module name="getout-server" />
         <module name="eureka-server" />
       </profile>
     </annotationProcessing>
@@ -16,6 +18,11 @@
       <module name="enter-server" target="1.8" />
       <module name="eureka-server" target="1.8" />
       <module name="getout-server" target="1.8" />
+      <module name="mongodb" target="1.5" />
+      <module name="security-server" target="1.8" />
+      <module name="security-server-api" target="1.5" />
+      <module name="securityserverapi" target="1.8" />
+      <module name="sercurityserverapi" target="1.8" />
       <module name="zuul-server" target="1.8" />
     </bytecodeTargetLevel>
   </component>
