@@ -1,6 +1,7 @@
 package com.itxwl.enterserver.service;
 
 import com.itxwl.enterserver.entiry.User;
+import com.itxwl.enterserver.exception.MyException;
 
 import java.util.List;
 
@@ -23,6 +24,6 @@ public interface UserService  {
      * 查询所有
      * @return
      */
-    List<User> selectAll() throws Exception;
+    User selectById(Long id)throws MyException;
 
 }

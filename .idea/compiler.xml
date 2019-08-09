@@ -11,11 +11,14 @@
         <module name="enter-server" />
         <module name="security-server" />
         <module name="getout-server" />
+        <module name="errors-erver" />
         <module name="eureka-server" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="common-server" target="1.5" />
       <module name="enter-server" target="1.8" />
+      <module name="errors-erver" target="1.5" />
       <module name="eureka-server" target="1.8" />
       <module name="getout-server" target="1.8" />
       <module name="mongodb" target="1.5" />

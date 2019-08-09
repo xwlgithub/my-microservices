@@ -1,9 +1,13 @@
 package com.itxwl.enterserver.service.impl;
 
 import com.itxwl.enterserver.entiry.User;
+import com.itxwl.enterserver.exception.ExceptionEnum;
+import com.itxwl.enterserver.exception.MyException;
 import com.itxwl.enterserver.respotitory.UserRepository;
 import com.itxwl.enterserver.service.UserService;
 import lombok.AllArgsConstructor;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -54,14 +58,15 @@ public class UserServiceImpl implements UserService {
      * @return
      */
     @Override
-    public List<User> selectAll()throws Exception {
-        List<User> userList=null;
+    public User selectById(Long id)throws MyException {
+        User user=null;
         try {
-             userList = userRepository.findAll();
+            user = userRepository.findOne(id);
+            int i=1/0;
         } catch (Exception e) {
-            throw new RuntimeException("查询失败!");
+            throw  new MyException(ExceptionEnum.EXCEPTION_RUN_ERROR);
         }
-        return userList;
+        return user;
     }
 
 }

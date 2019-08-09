@@ -2,33 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db3cd2e8-a705-4044-a75c-784fc880b4ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_7_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_4_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_4_2_12_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_4_1_3_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-server-api/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-server-api/security-server-api.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-server-api/src/main/java/com/itxwl/entity/Demo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-server/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-server/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-server/src/main/java/com/itxwl/securityserver/SecurityServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-server/src/main/java/com/itxwl/securityserver/config/MySecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-server/src/main/java/com/itxwl/securityserver/controller/DataController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/security-server/src/test/java/com/itxwl/securityserver/SecurityServerApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_4_3_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_4_3_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_4_3_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_4_3_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_4_3_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_4_3_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_4_3_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errors-erver/errors-erver.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errors-erver/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/CommonExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/exception/ExceptionEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/exception/ExceptionResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/exception/MyException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/zuul-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-server/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enter-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/enter-server/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/zuul-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/zuul-server/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/eureka-server/target/" />
     <ignored path="$PROJECT_DIR$/enter-server/target/" />
@@ -39,6 +35,8 @@
     <ignored path="$PROJECT_DIR$/security-server-api/target/" />
     <ignored path="$PROJECT_DIR$/security-server/sercurity-server-api/target/" />
     <ignored path="$PROJECT_DIR$/securityserverapi/target/" />
+    <ignored path="$PROJECT_DIR$/common-server/target/" />
+    <ignored path="$PROJECT_DIR$/errors-erver/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,11 +48,113 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/zuul-server/src/main/resources/application.yml">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="15" column="10" lean-forward="true" selection-start-line="15" selection-start-column="10" selection-end-line="15" selection-end-column="10" />
+            <state relative-caret-position="459">
+              <caret line="89" column="33" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="33" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#saveUser#0;class#UserController#0" />
+                <element signature="method#deletes#0;class#UserController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/exception/ExceptionEnum.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="231">
+              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/exception/MyException.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="483">
+              <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="417">
+              <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/errors-erver/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="378">
+              <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/CommonExceptionHandler.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="83" lean-forward="true" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/exception/ExceptionResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/EnterServerApplication.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="336">
+              <caret line="18" selection-start-line="18" selection-end-line="18" />
+              <folding>
+                <element signature="e#366#367#0" expanded="true" />
+                <element signature="e#439#440#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enter-server/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="320">
+              <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -74,6 +174,8 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>rundas</find>
+      <find>bad</find>
+      <find>BAD</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -82,18 +184,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/eureka-server/src/main/java/com/itxwl/eurekaserver/EurekaServerApplication.java" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/EnterServerApplication.java" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/entiry/User.java" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/mapper/UserMapper.xml" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/respotitory/UserRepository.java" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/service/UserService.java" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/test/Demo.java" />
-        <option value="$PROJECT_DIR$/zuul-server/Studay.md" />
-        <option value="$PROJECT_DIR$/enter-server/pom.xml" />
-        <option value="$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/config/ServerFilter.java" />
         <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/filter/ServerFilter.java" />
         <option value="$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/filter/ZuulFiletes.java" />
@@ -103,11 +193,9 @@
         <option value="$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/filter/ZuulExceptionfilter.java" />
         <option value="$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/filter/ServiceFallbackProvider.java" />
         <option value="$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/exceptions/ServiceFallbackProvider.java" />
-        <option value="$PROJECT_DIR$/zuul-server/pom.xml" />
         <option value="$PROJECT_DIR$/.idea/workspace.xml" />
         <option value="$PROJECT_DIR$/getout-server/src/main/java/com/itxwl/getoutserver/entity/User.java" />
         <option value="$PROJECT_DIR$/getout-server/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/controller/UserController.java" />
         <option value="$PROJECT_DIR$/getout-server/src/main/java/com/itxwl/getoutserver/api/EnterFeign.java" />
         <option value="$PROJECT_DIR$/getout-server/src/main/java/com/itxwl/getoutserver/api/EnterFeignHystrix/EnterFeignException.java" />
         <option value="$PROJECT_DIR$/getout-server/src/main/java/com/itxwl/getoutserver/GetoutServerApplication.java" />
@@ -130,6 +218,23 @@
         <option value="$PROJECT_DIR$/security-server/pom.xml" />
         <option value="$PROJECT_DIR$/security-server-api/pom.xml" />
         <option value="$PROJECT_DIR$/zuul-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/zuul-server/pom.xml" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/errors/EumException.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/errors/MyException.java" />
+        <option value="$PROJECT_DIR$/common-server/src/main/java/com/itxwl/error.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/errors/ExceptionResult.java" />
+        <option value="$PROJECT_DIR$/common-server/pom.xml" />
+        <option value="$PROJECT_DIR$/common-server/src/main/java/com/itxwl/error/MyException.java" />
+        <option value="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/error/CommonExceptionHandler.java" />
+        <option value="$PROJECT_DIR$/enter-server/pom.xml" />
+        <option value="$PROJECT_DIR$/errors-erver/pom.xml" />
+        <option value="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/exception/ExceptionEnum.java" />
+        <option value="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/exception/MyException.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/service/impl/UserServiceImpl.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/service/UserService.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/exception/ExceptionResult.java" />
+        <option value="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/CommonExceptionHandler.java" />
       </list>
     </option>
   </component>
@@ -153,10 +258,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="655" />
-    <option name="y" value="108" />
+    <option name="x" value="442" />
+    <option name="y" value="64" />
     <option name="width" value="1250" />
-    <option name="height" value="914" />
+    <option name="height" value="915" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -166,8 +271,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,30 +281,25 @@
             <path>
               <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="getout-server" type="462c0819:PsiDirectoryNode" />
+              <item name="enter-server" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="security-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="security-server" type="462c0819:PsiDirectoryNode" />
+              <item name="enter-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="security-server" type="462c0819:PsiDirectoryNode" />
+              <item name="enter-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="security-server" type="462c0819:PsiDirectoryNode" />
+              <item name="enter-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -209,7 +307,7 @@
             <path>
               <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="security-server" type="462c0819:PsiDirectoryNode" />
+              <item name="enter-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -218,7 +316,7 @@
             <path>
               <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="security-server" type="462c0819:PsiDirectoryNode" />
+              <item name="enter-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
@@ -228,56 +326,88 @@
             <path>
               <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="security-server" type="462c0819:PsiDirectoryNode" />
+              <item name="enter-server" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="itxwl" type="462c0819:PsiDirectoryNode" />
-              <item name="securityserver" type="462c0819:PsiDirectoryNode" />
+              <item name="enterserver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="security-server" type="462c0819:PsiDirectoryNode" />
+              <item name="errors-erver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="errors-erver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="errors-erver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="errors-erver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="errors-erver" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="errors-erver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="itxwl" type="462c0819:PsiDirectoryNode" />
-              <item name="securityserver" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="security-server" type="462c0819:PsiDirectoryNode" />
+              <item name="errors-erver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itxwl" type="462c0819:PsiDirectoryNode" />
+              <item name="enterserver" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="security-server-api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="security-server-api" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
-              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
-              <item name="security-server-api" type="462c0819:PsiDirectoryNode" />
+              <item name="errors-erver" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itxwl" type="462c0819:PsiDirectoryNode" />
+              <item name="enterserver" type="462c0819:PsiDirectoryNode" />
+              <item name="exception" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -293,7 +423,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Spring-CloudJiYuZuulDeTongYiShouQuanRenZheng" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/common-server/src/main/java/com/itxwl/error" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -306,11 +436,14 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="File.Encoding" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.itxwl" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\javas\IdeaWorkSpace\my-microservices\common-server\src\main\java\com\itxwl\error" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.itxwl.getoutserver.entity" />
@@ -338,7 +471,7 @@
     </option>
     <option name="contentProportion" value="0.1504329" />
   </component>
-  <component name="RunManager" selected="Spring Boot.SecurityServerApplication">
+  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
     <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
       <module name="mongodb" />
       <option name="VM_PARAMETERS" />
@@ -466,7 +599,11 @@
       <workItem from="1564534803423" duration="2228000" />
       <workItem from="1564549703685" duration="532000" />
       <workItem from="1564555140411" duration="91000" />
-      <workItem from="1564559136921" duration="234000" />
+      <workItem from="1564559136921" duration="417000" />
+      <workItem from="1564565041955" duration="2039000" />
+      <workItem from="1564648318461" duration="3231000" />
+      <workItem from="1564709214947" duration="7000" />
+      <workItem from="1565331867239" duration="5950000" />
     </task>
     <task id="LOCAL-00001" summary="提交测试">
       <created>1563156210684</created>
@@ -489,11 +626,18 @@
       <option name="project" value="LOCAL" />
       <updated>1563608495650</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="第三次提交增加security-">
+      <created>1564559399928</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564559399928</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57169000" />
+    <option name="totallyTimeSpent" value="68813000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -505,9 +649,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="442" y="64" width="1250" height="915" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.35472974" visible="true" weight="0.15565032" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.35472974" visible="true" weight="0.23361345" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -516,24 +661,24 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.31329924" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.40953413" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" auto_hide="true" content_ui="combo" id="Run Dashboard" order="6" sideWeight="0.8358209" weight="0.39328277" />
+      <window_info anchor="bottom" auto_hide="true" content_ui="combo" id="Run Dashboard" order="6" sideWeight="0.8358209" weight="0.3286445" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.1641791" weight="0.35861322" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.22535211" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2156013" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.47128928" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.37579957" weight="0.32827735" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.37579957" weight="0.32719395" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.08528785" weight="0.32905483" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" visible="true" weight="0.1337953" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.21092437" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -545,7 +690,7 @@
       <window_info anchor="right" id="CDI" order="12" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.35472974" visible="true" weight="0.20202559" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.35472974" visible="true" weight="0.2621849" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -554,24 +699,24 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.28277355" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.31419286" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.40953413" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" auto_hide="true" content_ui="combo" id="Run Dashboard" order="6" sideWeight="0.8358209" weight="0.37919825" />
+      <window_info anchor="bottom" auto_hide="true" content_ui="combo" id="Run Dashboard" order="6" sideWeight="0.8358209" weight="0.3094629" />
       <window_info anchor="bottom" id="Spring" order="7" sideWeight="0.1641791" weight="0.35861322" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32936078" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.2156013" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.47128928" />
-      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.37579957" weight="0.32936078" />
+      <window_info anchor="bottom" id="Messages" order="11" sideWeight="0.37579957" weight="0.32827735" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" sideWeight="0.08528785" weight="0.32905483" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32936078" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Maven" order="3" weight="0.37835822" />
+      <window_info anchor="right" id="Maven" order="3" weight="0.21092437" />
       <window_info anchor="right" id="Palette" order="4" />
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="Database" order="6" />
@@ -579,6 +724,8 @@
       <window_info anchor="right" id="Theme Preview" order="8" />
       <window_info anchor="right" id="Bean Validation" order="9" weight="0.32995737" />
       <window_info anchor="right" auto_hide="true" x="22" y="299" width="1876" height="441" id="TODO" order="10" sideWeight="0.09541578" side_tool="true" type="WINDOWED" weight="0.47778982" />
+      <window_info anchor="right" id="JSF" order="11" />
+      <window_info anchor="right" id="CDI" order="12" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -628,175 +775,10 @@
     <MESSAGE value="提交测试" />
     <MESSAGE value="提交" />
     <MESSAGE value="第二次提交(服务消费者/提供者 和网关)" />
-    <option name="LAST_COMMIT_MESSAGE" value="第二次提交(服务消费者/提供者 和网关)" />
+    <MESSAGE value="第三次提交增加security-" />
+    <option name="LAST_COMMIT_MESSAGE" value="第三次提交增加security-" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/test/Demo.java" />
-    <entry file="file://$PROJECT_DIR$/zuul-server/Studay.md" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.jar!/com/netflix/zuul/context/RequestContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="172" column="39" lean-forward="true" selection-start-line="172" selection-start-column="39" selection-end-line="172" selection-end-column="39" />
-          <folding>
-            <element signature="e#4861#4862#0" expanded="true" />
-            <element signature="e#4907#4908#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/config/ServerFilter.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.jar!/com/netflix/zuul/ZuulFilter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="23" column="22" selection-start-line="23" selection-start-column="22" selection-end-line="23" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/filter/ServerFilter.java" />
-    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="12" column="23" selection-start-line="12" selection-start-column="23" selection-end-line="12" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/ZuulServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="12" column="42" selection-start-line="12" selection-start-column="42" selection-end-line="12" selection-end-column="42" />
-          <folding>
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#496#497#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/filter/ZuulExceptionProvider.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/String.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="956" column="18" selection-start-line="956" selection-start-column="18" selection-end-line="956" selection-end-column="18" />
-          <folding>
-            <element signature="e#36393#36394#0" expanded="true" />
-            <element signature="e#36459#36460#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/io/ByteArrayInputStream.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="102" column="11" selection-start-line="102" selection-start-column="11" selection-end-line="102" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="32" selection-start-line="32" selection-end-line="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2961">
-          <caret line="378" column="11" selection-start-line="378" selection-start-column="11" selection-end-line="378" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getout-server/src/main/java/com/itxwl/getoutserver/entity/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="645">
-          <caret line="61" column="38" selection-start-line="61" selection-start-column="22" selection-end-line="61" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getout-server/src/main/java/com/itxwl/getoutserver/GetoutServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="13" column="38" lean-forward="true" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding>
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#529#530#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getout-server/src/main/java/com/itxwl/getoutserver/api/EnterFeign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="13" column="55" selection-start-line="13" selection-start-column="55" selection-end-line="13" selection-end-column="55" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getout-server/src/main/java/com/itxwl/getoutserver/api/EnterFeignHystrix/EnterFeignException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="219">
-          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/filter/ZuulFilterEveryServer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="24" column="7" lean-forward="true" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mongodb/pom.xml" />
-    <entry file="file://$PROJECT_DIR$/mongodb/src/main/java/com/itxwl/DemoMongoDB.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/1.5.21.RELEASE/spring-boot-autoconfigure-1.5.21.RELEASE.jar!/org/springframework/boot/autoconfigure/SpringBootApplication.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="35" column="18" selection-start-line="35" selection-start-column="18" selection-end-line="35" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/java/com/itxwl/eurekaserver/EurekaServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="19" />
-          <folding>
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#436#437#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/EnterServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-          <folding>
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#439#440#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/4.1.3.RELEASE/spring-security-config-4.1.3.RELEASE.jar!/org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="66" column="13" selection-start-line="66" selection-start-column="4" selection-end-line="66" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/security-server/src/main/resources/templates/login.html" />
     <entry file="file://$PROJECT_DIR$/security-server/src/main/java/com/itxwl/securityserver/SecurityServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -820,35 +802,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/entiry/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="21">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#saveUser#0;class#UserController#0" />
-            <element signature="method#deletes#0;class#UserController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" selection-start-line="11" selection-end-line="20" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/respotitory/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -859,13 +812,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/getout-server/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -873,43 +819,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/exceptions/ServiceFallbackProvider.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
-          <folding>
-            <element signature="e#619#620#0" expanded="true" />
-            <element signature="e#645#646#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="588">
-          <caret line="28" column="48" lean-forward="true" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getout-server/src/main/java/com/itxwl/getoutserver/controller/GetEnterController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/security-server/src/main/java/com/itxwl/securityserver/TTT.java" />
     <entry file="file://$PROJECT_DIR$/security-server-api/src/main/java/com/itxwl/securityserver/entity/Demo.java" />
-    <entry file="file://$PROJECT_DIR$/enter-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="57" column="21" selection-start-line="53" selection-start-column="7" selection-end-line="57" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/security-server/sercurity-server-api/pom.xml" />
     <entry file="file://$PROJECT_DIR$/security-server/sercurity-server-api/src/main/java/Demo.java" />
     <entry file="file://$PROJECT_DIR$/securityserverapi/securityserverapi.iml" />
@@ -919,13 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1071">
           <caret line="51" selection-start-line="51" selection-end-line="55" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/security-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="60" column="24" selection-start-line="60" selection-start-column="24" selection-end-line="60" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -948,7 +852,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/security-server/src/main/java/com/itxwl/securityserver/controller/DataController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
+        <state relative-caret-position="252">
           <caret line="12" column="28" selection-start-line="12" selection-start-column="28" selection-end-line="12" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -959,8 +863,293 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/security-server-api/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="231">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-34">
+          <caret line="60" column="26" lean-forward="true" selection-start-line="60" selection-start-column="26" selection-end-line="60" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getout-server/src/main/java/com/itxwl/getoutserver/controller/GetEnterController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Exception.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="64" column="11" selection-start-line="64" selection-start-column="11" selection-end-line="64" selection-end-column="11" />
+          <folding>
+            <element signature="e#1663#1664#0" expanded="true" />
+            <element signature="e#1693#1694#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/RuntimeException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="60" column="11" selection-start-line="60" selection-start-column="11" selection-end-line="60" selection-end-column="11" />
+          <folding>
+            <element signature="e#1598#1599#0" expanded="true" />
+            <element signature="e#1628#1629#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.24.RELEASE/spring-web-4.3.24.RELEASE.jar!/org/springframework/web/bind/annotation/ControllerAdvice.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="17" column="25" selection-start-line="17" selection-start-column="25" selection-end-line="17" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#909#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="11" lean-forward="true" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-server/src/main/java/com/itxwl/error.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="45" selection-start-line="10" selection-start-column="45" selection-end-line="10" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/errors/EumException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="24" lean-forward="true" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/errors/ExceptionResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+          <folding>
+            <element signature="e#67#91#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-server/src/main/java/com/itxwl/error/EumException.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-server/src/main/java/com/itxwl/error/ExceptionResult.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/errors/MyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="37" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#267#268#0" expanded="true" />
+            <element signature="e#297#298#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-server/src/main/java/com/itxwl/error/MyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/common-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="632">
+          <caret line="31" column="34" selection-start-line="31" selection-start-column="34" selection-end-line="31" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/security-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="24" column="21" lean-forward="true" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.24.RELEASE/spring-web-4.3.24.RELEASE.jar!/org/springframework/http/HttpStatus.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="77" column="25" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.24.RELEASE/spring-web-4.3.24.RELEASE.jar!/org/springframework/http/ResponseEntity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/enter-server.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/exceptions/ServiceFallbackProvider.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-84">
+          <caret line="25" column="50" selection-start-line="25" selection-start-column="50" selection-end-line="25" selection-end-column="50" />
+          <folding>
+            <element signature="e#619#620#0" expanded="true" />
+            <element signature="e#645#646#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/filter/ZuulFilterEveryServer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="20" column="30" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/entiry/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.11.RELEASE/spring-web-4.3.11.RELEASE.jar!/org/springframework/http/HttpStatus.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="77" column="25" selection-start-line="77" selection-start-column="4" selection-end-line="77" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="320">
+          <caret line="61" column="36" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/EnterServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+          <folding>
+            <element signature="e#366#367#0" expanded="true" />
+            <element signature="e#439#440#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errors-erver/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="18" column="28" selection-start-line="18" selection-start-column="28" selection-end-line="18" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/controller/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="89" column="33" selection-start-line="89" selection-start-column="22" selection-end-line="89" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#saveUser#0;class#UserController#0" />
+            <element signature="method#deletes#0;class#UserController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/exception/ExceptionResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="46" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/CommonExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="13" column="83" lean-forward="true" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/exception/MyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="483">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/enterserver/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="417">
+          <caret line="60" column="53" selection-start-line="60" selection-start-column="53" selection-end-line="60" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/enterserver/exception/ExceptionEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1016,7 +1205,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>security-server-api</last-edited>
+          <last-edited>common-server</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

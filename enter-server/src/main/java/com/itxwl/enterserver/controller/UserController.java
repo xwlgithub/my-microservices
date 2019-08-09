@@ -3,14 +3,14 @@ package com.itxwl.enterserver.controller;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.itxwl.enterserver.entiry.User;
-import com.itxwl.enterserver.respotitory.UserRepository;
+import com.itxwl.enterserver.exception.ExceptionEnum;
+import com.itxwl.enterserver.exception.MyException;
 import com.itxwl.enterserver.service.UserService;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang.StringUtils;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.web.PageableDefault;
+
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
@@ -81,17 +81,16 @@ public class UserController {
      * @param
      * @return
      */
-    @GetMapping(value = "/selectAll")
-    //Page<List<User>>
-    public List<User> selectAll(){
-        List<User> userList=null;
+    @GetMapping(value = "/selectAll/{id}")
+    public ResponseEntity<User> selectById(@PathVariable("id") Long id){
+        User user=null;
         try {
-             userList= userService.selectAll();
-        } catch (Exception e) {
-             throw  new RuntimeException(e.getMessage());
+            user= userService.selectById(id);
+        } catch (MyException e) {
+           throw  new MyException(e.getExceptionEnum());
         }
-        System.out.println(userList.toString());
-        return userList;
+        return ResponseEntity.ok(user);
     }
+
 
 }

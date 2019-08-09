@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/enter-server/enter-server.iml" filepath="$PROJECT_DIR$/enter-server/enter-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/errors-erver/errors-erver.iml" filepath="$PROJECT_DIR$/errors-erver/errors-erver.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/getout-server/getout-server.iml" filepath="$PROJECT_DIR$/getout-server/getout-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/my-microservices.iml" filepath="$PROJECT_DIR$/.idea/my-microservices.iml" />
