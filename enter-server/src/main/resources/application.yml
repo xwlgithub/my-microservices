@@ -6,7 +6,7 @@ spring:
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
     username: root
-    password: 123456
+    password: root
     url: jdbc:mysql://localhost:3306/microservices?characterEncoding=utf-8
     # sql is update
   jpa:
