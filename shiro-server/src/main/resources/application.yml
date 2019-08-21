@@ -1,0 +1,35 @@
+server:
+  port: 7777
+spring:
+  application:
+    name: shiro-server
+  jpa:
+    hibernate:
+      ddl-auto: update
+#  datasource:
+#    password: root
+#    username: root
+#    url: jdbc:mysql://localhost:3306/microservices?characterEncoding=utf-8&useSSL=true
+#    driver-class-name: com.mysql.jdbc.Driver
+    #\u89C6\u56FE \u9759\u6001\u8D44\u6E90\u4F4D\u7F6E\u89E3\u6790
+    #static-path-pattern: /**
+  #resources:
+    #static-locations: classpath:/templates/,classpath:/resources/,classpath:/static/,classpath:/public/
+  #关闭缓存
+  thymeleaf:
+    cache: false
+    prefix: classpath:/templates/
+    suffix: .html
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    service-url:
+      defaultZone:  http://localhost:8761/eureka/
+logging:
+  level:
+    root: INFO
+    org.hibernate: INFO
+    org.hibernate.type.descriptor.sql.BasicBinder: TRACE
+    org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
+    com.springms: DEBUG

@@ -1,5 +1,5 @@
 server:
-  port: 5656
+  port: 5555
 spring:
   application:
     name: zuul-server
