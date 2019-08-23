@@ -122,7 +122,7 @@ public class MyRealm extends AuthorizingRealm {
     }
 
     public static void main(String[] args) {
-        Md5Hash md5Hash=new Md5Hash("123");
+        Md5Hash md5Hash=new Md5Hash("123","");
 
         String s = md5Hash.toString();
         System.out.println(s);

@@ -1,31 +1,36 @@
+#shiro服务端口
 server:
   port: 7777
+#shiro服务名称
 spring:
   application:
     name: shiro-server
+#关联更新数据库,自动建表update：有变动的字段就更新,不存在表就建表
   jpa:
     hibernate:
       ddl-auto: update
-#  datasource:
-#    password: root
-#    username: root
-#    url: jdbc:mysql://localhost:3306/microservices?characterEncoding=utf-8&useSSL=true
-#    driver-class-name: com.mysql.jdbc.Driver
-    #\u89C6\u56FE \u9759\u6001\u8D44\u6E90\u4F4D\u7F6E\u89E3\u6790
-    #static-path-pattern: /**
-  #resources:
-    #static-locations: classpath:/templates/,classpath:/resources/,classpath:/static/,classpath:/public/
-  #关闭缓存
+#jdbc4个基本配置 驱动/url/密码/用户名
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/microservices?characterEncoding=utf-8&useSSL=true
+    password: root
+    username: root
+#关闭缓存
   thymeleaf:
     cache: false
+#静态html文件存储位置,默认templates目录下
     prefix: classpath:/templates/
+#默认后缀为html,之后的html转发无需加后缀html
     suffix: .html
+#该服务IP地址
 eureka:
   instance:
     hostname: localhost
+#注册到注册中心的地址
   client:
     service-url:
       defaultZone:  http://localhost:8761/eureka/
+#控制台打印日志信息
 logging:
   level:
     root: INFO

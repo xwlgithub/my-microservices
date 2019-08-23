@@ -5,8 +5,9 @@ import lombok.Data;
 @Data
 public class MyException extends RuntimeException{
     private ExceptionEnum exceptionEnum;
-    public MyException(ExceptionEnum exceptionEnum){
-        this.exceptionEnum=exceptionEnum;
+    private String message;
+    public MyException(ExceptionEnum em){
+        this.exceptionEnum=em;
+        System.out.println(exceptionEnum);
     }
-
 }
