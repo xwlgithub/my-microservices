@@ -33,7 +33,7 @@ public class ShiroConfig {
         /**
          * 添加授权过滤器 验证当前用户是否有删除权限,如果没有跳转未授权页面或抛出异常信息
          */
-        filterChainMap.put("/delete", "perms[user:delete]");
+        filterChainMap.put("/delete", "perms[select]");
         filterChainMap.put("/**", "authc");
         //拦截所有请求直接到登录页面
         shiroFilterFactoryBean.setLoginUrl("/login");
