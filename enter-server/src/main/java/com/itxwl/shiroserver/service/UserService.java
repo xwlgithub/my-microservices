@@ -3,6 +3,8 @@ package com.itxwl.shiroserver.service;
 import com.itxwl.shiroserver.entiry.User;
 import com.itxwl.shiroserver.exception.MyException;
 
+import java.util.List;
+
 public interface UserService  {
     /**
      * 保存
@@ -16,12 +18,17 @@ public interface UserService  {
      * @param id
      * @return
      */
-    Integer deletes(Long id) throws Exception;
+    Integer deletes(String id) throws Exception;
 
     /**
      * 查询所有
      * @return
      */
-    User selectById(Long id)throws MyException;
+    User selectById(String id)throws MyException;
 
+    List<User> findAll(String name);
+
+    void update(User user);
+
+    Boolean Login(String name, String password) throws MyException;
 }

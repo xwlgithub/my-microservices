@@ -8,6 +8,5 @@ public class MyException extends RuntimeException{
     private String message;
     public MyException(ExceptionEnum em){
         this.exceptionEnum=em;
-        System.out.println(exceptionEnum);
     }
 }

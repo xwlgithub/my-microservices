@@ -1,0 +1,19 @@
+spring:
+  rabbitmq:
+    host: 192.168.0.108
+    username: xwl
+    password: 258000
+    virtual-host: /xwl
+    #模板
+    template:
+      retry:
+        enabled: true
+        #初始化重复周期
+        initial-interval: 10000
+        #最大的重置周期
+        max-interval: 30000
+        #最多重置次数
+        multiplier: 2
+      #交换机
+      #exchange:
+    publisher-confirms: true

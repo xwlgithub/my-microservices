@@ -22,6 +22,9 @@ spring:
     prefix: classpath:/templates/
 #默认后缀为html,之后的html转发无需加后缀html
     suffix: .html
+  redis:
+    host: localhost
+    port: 6379
 #该服务IP地址
 eureka:
   instance:
@@ -38,3 +41,6 @@ logging:
     org.hibernate.type.descriptor.sql.BasicBinder: TRACE
     org.hibernate.type.descriptor.sql.BasicExtractor: TRACE
     com.springms: DEBUG
+sp:
+  key: xuewenliang
+  ttl: 3600000
