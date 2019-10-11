@@ -31,4 +31,13 @@ public interface UserService  {
     void update(User user);
 
     Boolean Login(String name, String password) throws MyException;
+
+    /**
+     * 分配角色
+     * @param userId
+     * @param roleIds
+     * @return
+     */
+    Boolean withRole(String userId, String roleIds,String deleIds);
+
 }

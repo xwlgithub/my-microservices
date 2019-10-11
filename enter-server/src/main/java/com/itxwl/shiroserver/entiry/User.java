@@ -1,16 +1,20 @@
 package com.itxwl.shiroserver.entiry;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
 import javax.persistence.*;
+import java.io.Serializable;
 import java.util.HashSet;
 import java.util.Set;
-
 @Data
 @Table(name = "user")
 @Entity
-public class User {
+public class User  implements Serializable {
+    private static final long serialVersionUID = 1L;
     @Id
     @Column(name = "id",nullable = true)
     private String id;
@@ -23,9 +27,9 @@ public class User {
     private String email;
     @Column(name = "phoneNumber",nullable = true)
     private String phoneNumber;
+
     @Column(name = "remark",nullable = true)
     private String remark;
-
     /**
      * 用户与角色多对多
      * @JsonIgnore 忽略返回

@@ -9,6 +9,7 @@ import lombok.*;
 @SuppressWarnings("all")
 public enum ExceptionEnum {
     EXCEPTION_RUN_ERROR("服务器异常",500),
+    DELETE_ERROR("删除失败",500),
     AUTH_NO_EVERYS("访问受限,请求未授权",401),
     USERNAME_NO_EXISTENCE("用户名不存在",404),
     USERNAME_AND_PSD_ERROR("用户名或密码错误",500),

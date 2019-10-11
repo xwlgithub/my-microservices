@@ -30,6 +30,23 @@ public class UserController {
     private UserService userService;
 
     /**
+     * 分配角色
+     * @param userId
+     * @param roleIds
+     * @return
+     */
+    @PostMapping(value = "saveWithRole")
+    public Map<String,Object> withRole(String userId,String roleIds,String deleIds){
+        Map<String,Object> map=new HashMap<>();
+      Boolean bn=  userService.withRole(userId,roleIds,deleIds);
+      if (bn){
+          map.put("success", true);
+          return map;
+      }
+        map.put("error", false);
+        return map;
+    }
+    /**
      * 添加
      *
      * @param

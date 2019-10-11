@@ -16,16 +16,20 @@ public class PageUtil<T> {
     private Integer pagetotal;
 
     public PageUtil (Integer current,Integer size ,List<T> dataList){
-        this.current=current;
-        this.size=size;
-        this.totol=dataList.size();
-        /**
-         * 12
-         * 1 10
-         * 0,10
-         */
-        this.dataList =dataList.subList ((current-1)*size,((current-1)*size+size)<dataList.size()?((current-1)*size+size):dataList.size());
-        this.pagetotal=dataList.size()%size==0?dataList.size()/size:(dataList.size()/size)+1;
-    }
+        if (current!=null &&size!=null){
+            this.current=current;
+            this.size=size;
+            this.totol=dataList.size();
+            /**
+             * 12
+             * 1 10
+             * 0,10
+             */
+            this.dataList =dataList.subList ((current-1)*size,((current-1)*size+size)<dataList.size()?((current-1)*size+size):dataList.size());
+            this.pagetotal=dataList.size()%size==0?dataList.size()/size:(dataList.size()/size)+1;
+        }else {
+            this.dataList =dataList;
+        }
 
+    }
 }

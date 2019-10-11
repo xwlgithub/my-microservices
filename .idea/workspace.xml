@@ -2,98 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db3cd2e8-a705-4044-a75c-784fc880b4ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_59.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_puppycrawl_tools_checkstyle_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_amqp_client_4_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_rabbitmq_http_client_1_1_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_beanutils_commons_beanutils_1_8_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_cli_commons_cli_1_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_httpclient_commons_httpclient_3_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_logging_commons_logging_1_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_sf_saxon_Saxon_HE_9_8_0_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_antlr_antlr4_runtime_4_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_4_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_3_6.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_3_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_crazycake_shiro_redis_3_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_6_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_amqp_1_7_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_amqp_spring_rabbit_1_7_1_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_configuration_processor_1_5_21_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_amqp_1_5_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_retry_spring_retry_1_2_0_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_messaging_4_3_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_4_3_7_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__redis_clients_jedis_2_9_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/FilterIntercepter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/RoleController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/WebConmfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/Permission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/PermissionApi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/PermissionMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/PermissionPoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/utils/IdWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/utils/PageUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/config/JwtInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/config/SystemConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/createjwt/CreateJwtTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/createjwt/ParseJwtTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/entity/RolePermission.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/entity/UserInformation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/entity/UserRoles.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/repository/RoleRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/repository/RplePermissionRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/service/LoginJwtProceService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/session/CustomerSessionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/util/JwtUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-server/src/test/java/com/itxwl/shiroserver/util/Testssss.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/Listener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/ShiroTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/crt/TestHttpsCrt.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/danlie/Simglen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/direct/Recv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/direct/Recv2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/direct/Send.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/rabbitmq/Recv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/rabbitmq/Recv2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/rabbitmq/Send.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/tanout/Recv.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/tanout/Recv2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/tanout/Send.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/utils/ConnectionUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shiro-test/src/test/java/com.itxwl/rabbitmq/MQDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/respotitory/RoleRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/impl/RoleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/utils/R.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/RoleController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/Role.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/respotitory/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/respotitory/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/utils/PageUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/utils/PageUtil.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/enter-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/enter-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errors-erver/errors-erver.iml" beforeDir="false" afterPath="$PROJECT_DIR$/errors-erver/errors-erver.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errors-erver/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/errors-erver/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/CommonExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/CommonExceptionHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/exception/ExceptionEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/exception/ExceptionEnum.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/exception/ExceptionResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/exception/ExceptionResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/exception/MyException.java" beforeDir="false" afterPath="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/exception/MyException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-server/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-server/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/ShiroServerApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/ShiroServerApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/config/ShiroConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/config/ShiroConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/realm/CustomRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/realm/CustomRealm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-server/src/main/resources/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-server/src/main/resources/templates/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-server/src/main/resources/templates/success.html" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-server/src/main/resources/templates/success.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-server/src/test/java/com/itxwl/shiroserver/Demo.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-server/src/test/java/com/itxwl/shiroserver/ShiroServerApplicationTests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-server/src/test/java/com/itxwl/shiroserver/Tests.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-test/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-test/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-test/shiro-test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-test/shiro-test.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/realm/TestMyRealm.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/realm/TestMyRealm.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/security-server/target/" />
     <ignored path="$PROJECT_DIR$/zuul-server/target/" />
@@ -126,15 +48,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/RoleController.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/UserController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="21" selection-start-line="21" selection-end-line="21" />
+            <state relative-caret-position="483">
+              <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+              <folding>
+                <element signature="method#saveUser#0;class#UserController#0" />
+                <element signature="method#update#0;class#UserController#0" />
+                <element signature="method#deletes#0;class#UserController#0" />
+                <element signature="method#Login#0;class#UserController#0" />
+                <element signature="method#findByNamePermission#0;class#UserController#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="196">
+              <caret line="169" column="12" selection-start-line="169" selection-start-column="12" selection-end-line="169" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#562#563#0" expanded="true" />
-                <element signature="e#588#589#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/RoleController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="411">
+              <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/RoleService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/impl/RoleServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="233">
+              <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -143,8 +124,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/Role.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="63">
-              <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+            <state relative-caret-position="65">
+              <caret line="40" column="66" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="66" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -196,11 +177,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/repository/RplePermissionRepository.java" />
-        <option value="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/entity/UserRoles.java" />
-        <option value="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/repository/UserRepository.java" />
-        <option value="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/repository/RoleRepository.java" />
-        <option value="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/createjwt/ParseJwtTest.java" />
         <option value="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/config/Demo.java" />
         <option value="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/util/JwtUtils.java" />
         <option value="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/config/SystemConfig.java" />
@@ -211,7 +187,6 @@
         <option value="$PROJECT_DIR$/errors-erver/pom.xml" />
         <option value="$PROJECT_DIR$/shiro-server/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/service/LoginJwtProceService.java" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/utils/PageUtil.java" />
         <option value="$PROJECT_DIR$/cron-server/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/eureka-server/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/createjwt/CreateJwtTest.java" />
@@ -222,7 +197,6 @@
         <option value="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/realm/TestMyRealm.java" />
         <option value="$PROJECT_DIR$/shiro-test/src/test/java/com.itxwl/IniRealmTest.java" />
         <option value="$PROJECT_DIR$/shiro-test/src/test/java/com.itxwl/AuthenticationTest.java" />
-        <option value="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/exception/ExceptionEnum.java" />
         <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/FilterIntercepter.java" />
         <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/WebConmfig.java" />
         <option value="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/realm/CustomRealm.java" />
@@ -234,19 +208,26 @@
         <option value="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/config/ShiroConfig.java" />
         <option value="$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/exceptions/FilterZuuls.java" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/PermissionPoint.java" />
         <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/PermissionMenu.java" />
         <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/PermissionApi.java" />
         <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/Permission.java" />
         <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/utils/IdWorker.java" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/User.java" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/UserService.java" />
         <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/respotitory/UserRepository.java" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/UserController.java" />
-        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/Role.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/respotitory/RoleRepository.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/utils/PageUtil.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/Demo.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/User.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/RoleService.java" />
         <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/RoleController.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/utils/R.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/impl/RoleServiceImpl.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/UserController.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/UserService.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/Role.java" />
+        <option value="$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/exception/ExceptionEnum.java" />
+        <option value="$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/impl/UserServiceImpl.java" />
       </list>
     </option>
   </component>
@@ -307,10 +288,10 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="394" />
-    <option name="y" value="49" />
-    <option name="width" value="1447" />
-    <option name="height" value="925" />
+    <option name="x" value="323" />
+    <option name="y" value="63" />
+    <option name="width" value="1446" />
+    <option name="height" value="927" />
   </component>
   <component name="ProjectId" id="1PUBFXXLYOZCR8FbRiiwEJmk5rM" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -342,7 +323,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -487,10 +467,75 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itxwl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itxwl" type="462c0819:PsiDirectoryNode" />
+              <item name="eurekaserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -509,7 +554,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/java/myworkspace/my-microservices/shiro-server/src/main/java/com/itxwl/shiroserver/session/CustomerSessionManager.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1569835383124" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1570701119885" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/cron" />
@@ -554,6 +599,7 @@
       <recent name="com.itxwl.getoutserver.entity" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="com.itxwl.shiroserver.service" />
       <recent name="com.itxwl.entity" />
       <recent name="com.itxwl.getoutserver.api.EnterFeignHystrix" />
       <recent name="com.itxwl.enterserver.service" />
@@ -575,35 +621,9 @@
         </RuleState>
       </list>
     </option>
-    <option name="contentProportion" value="0.16200295" />
+    <option name="contentProportion" value="0.1791531" />
   </component>
-  <component name="RunManager" selected="Spring Boot.EnterServerApplication">
-    <configuration name="CustomRealm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.itxwl.shiroserver.realm.CustomRealm" />
-      <module name="shiro-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itxwl.shiroserver.realm.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="IdWorker" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.itxwl.shiroserver.utils.IdWorker" />
-      <module name="enter-server" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.itxwl.shiroserver.utils.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Spring Boot.EurekaServerApplication">
     <configuration name="AuthenticationTest.testAuthentication" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="shiro-test" />
       <extension name="coverage">
@@ -727,13 +747,9 @@
       <item itemvalue="Spring Boot.ShiroServerApplication" />
       <item itemvalue="JUnit.IniRealmTest.testIniRealm" />
       <item itemvalue="JUnit.AuthenticationTest.testAuthentication" />
-      <item itemvalue="Application.CustomRealm" />
-      <item itemvalue="Application.IdWorker" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.IdWorker" />
-        <item itemvalue="Application.CustomRealm" />
         <item itemvalue="JUnit.AuthenticationTest.testAuthentication" />
         <item itemvalue="JUnit.IniRealmTest.testIniRealm" />
       </list>
@@ -854,7 +870,15 @@
       <workItem from="1569631309981" duration="398000" />
       <workItem from="1569633544568" duration="15268000" />
       <workItem from="1569717615531" duration="3492000" />
-      <workItem from="1569806457624" duration="16173000" />
+      <workItem from="1569806457624" duration="16214000" />
+      <workItem from="1570409561112" duration="1533000" />
+      <workItem from="1570437560011" duration="2493000" />
+      <workItem from="1570496294420" duration="12720000" />
+      <workItem from="1570597219367" duration="4451000" />
+      <workItem from="1570674909223" duration="6895000" />
+      <workItem from="1570687497539" duration="7000" />
+      <workItem from="1570688369236" duration="6959000" />
+      <workItem from="1570758514810" duration="1183000" />
     </task>
     <task id="LOCAL-00001" summary="提交测试">
       <created>1563156210684</created>
@@ -905,7 +929,14 @@
       <option name="project" value="LOCAL" />
       <updated>1566809593449</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="新增与前台交互">
+      <created>1569835915299</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1569835915299</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -941,7 +972,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="307161000" />
+    <option name="totallyTimeSpent" value="343443000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -953,10 +984,48 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="394" y="49" width="1447" height="925" extended-state="0" />
+    <frame x="323" y="63" width="1446" height="927" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4968153" visible="true" weight="0.27325162" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4968153" visible="true" weight="0.23593074" />
+      <window_info id="Structure" order="1" sideWeight="0.50328225" side_tool="true" weight="0.20418471" />
+      <window_info id="Designer" order="2" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" sideWeight="0.50318474" side_tool="true" weight="0.1684435" />
+      <window_info id="Capture Tool" order="6" />
+      <window_info id="Web" order="7" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.27578717" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2888165" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31921825" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.31096774" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.25426438" side_tool="true" weight="0.28664497" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32575756" />
+      <window_info anchor="bottom" id="Java Enterprise" order="11" />
+      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.7457356" visible="true" weight="0.43055555" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="JSF" order="4" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="CDI" order="6" />
+      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.49898168" weight="0.33093005" />
+      <window_info anchor="right" id="Database" order="8" />
+      <window_info anchor="right" id="Palette&#9;" order="9" />
+      <window_info anchor="right" id="Theme Preview" order="10" />
+      <window_info anchor="right" id="Bean Validation" order="11" />
+      <window_info anchor="right" id="Coverage" order="12" sideWeight="0.50101835" side_tool="true" weight="0.38961038" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4968153" visible="true" weight="0.33585224" />
       <window_info id="Structure" order="1" sideWeight="0.50328225" side_tool="true" weight="0.20418471" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -974,11 +1043,11 @@
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.31096774" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.25426438" side_tool="true" weight="0.28664497" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3278481" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32681867" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
       <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info active="true" anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.7457356" visible="true" weight="0.24303797" />
+      <window_info active="true" anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.7457356" visible="true" weight="0.33333334" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -987,44 +1056,6 @@
       <window_info anchor="right" id="Capture Analysis" order="5" />
       <window_info anchor="right" id="CDI" order="6" />
       <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.49898168" weight="0.33093005" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-      <window_info anchor="right" id="Bean Validation" order="11" />
-      <window_info anchor="right" id="Coverage" order="12" sideWeight="0.50101835" side_tool="true" weight="0.38961038" />
-    </layout>
-    <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4968153" visible="true" weight="0.26911977" />
-      <window_info id="Structure" order="1" sideWeight="0.50328225" side_tool="true" weight="0.20418471" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Favorites" order="5" sideWeight="0.50318474" side_tool="true" weight="0.1684435" />
-      <window_info id="Capture Tool" order="6" />
-      <window_info id="Web" order="7" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.27578717" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38031915" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.31921825" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
-      <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.31096774" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.25426438" side_tool="true" weight="0.28664497" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32978722" />
-      <window_info anchor="bottom" id="Java Enterprise" order="11" />
-      <window_info anchor="bottom" id="Database Changes" order="12" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="13" />
-      <window_info anchor="bottom" id="Run Dashboard" order="14" sideWeight="0.7457356" visible="true" weight="0.22074468" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="JSF" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="CDI" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" sideWeight="0.49898168" weight="0.38961038" />
       <window_info anchor="right" id="Database" order="8" />
       <window_info anchor="right" id="Palette&#9;" order="9" />
       <window_info anchor="right" id="Theme Preview" order="10" />
@@ -1063,58 +1094,10 @@
     <MESSAGE value="第二次提交(服务消费者/提供者 和网关)" />
     <MESSAGE value="第三次提交增加security-" />
     <MESSAGE value="整合shiro" />
-    <option name="LAST_COMMIT_MESSAGE" value="整合shiro" />
+    <MESSAGE value="新增与前台交互" />
+    <option name="LAST_COMMIT_MESSAGE" value="新增与前台交互" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/shiro-test/src/test/java/com.itxwl/AuthenticationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="20" column="58" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/realm/MyRealm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-867">
-          <caret line="25" column="54" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/service/LoginJwtProceService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="37" column="20" lean-forward="true" selection-start-line="37" selection-start-column="20" selection-end-line="37" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../mavenWarehouse/com/sun/jersey/jersey-servlet/1.19.1/jersey-servlet-1.19.1.jar!/com/sun/jersey/spi/container/servlet/WebConfig.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/exception/MyException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../mavenWarehouse/org/springframework/spring-web/4.3.24.RELEASE/spring-web-4.3.24.RELEASE.jar!/org/springframework/web/bind/annotation/CrossOrigin.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../mavenWarehouse/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authz/SimpleAuthorizationInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="11" column="65" selection-start-line="11" selection-start-column="48" selection-end-line="11" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/ShiroServerApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
@@ -1135,27 +1118,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="166">
           <caret line="89" column="57" lean-forward="true" selection-start-line="89" selection-start-column="57" selection-end-line="89" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/exception/ExceptionEnum.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="18" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/exception/ExceptionResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
-          <caret line="11" column="36" lean-forward="true" selection-start-line="11" selection-start-column="36" selection-end-line="11" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/CommonExceptionHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="22" column="60" lean-forward="true" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
         </state>
       </provider>
     </entry>
@@ -1208,16 +1170,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/utils/PageUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2415">
@@ -1243,9 +1195,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="546">
           <caret line="34" column="82" selection-start-line="34" selection-start-column="80" selection-end-line="34" selection-end-column="82" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1256,13 +1205,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/exceptions/FilterZuuls.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl/exceptions/FilterZuuls.java" />
     <entry file="file://$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/config/ShiroConfig.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="603">
@@ -1295,23 +1238,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="147">
           <caret line="10" column="44" selection-start-line="10" selection-start-column="44" selection-end-line="10" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/FilterIntercepter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" />
-          <folding>
-            <element signature="e#0#712#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/EnterServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -1356,59 +1282,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/resources/application.yml">
+    <entry file="file://$PROJECT_DIR$/eureka-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/FilterIntercepter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="20" column="48" lean-forward="true" selection-start-line="20" selection-start-column="48" selection-end-line="20" selection-end-column="48" />
+        <state>
+          <caret lean-forward="true" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$PROJECT_DIR$/../../mavenWarehouse/org/springframework/data/spring-data-commons/1.13.22.RELEASE/spring-data-commons-1.13.22.RELEASE.jar!/org/springframework/data/repository/CrudRepository.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="335">
-          <caret line="25" column="9" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+        <state relative-caret-position="126">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/Demo.java" />
     <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/respotitory/UserRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="8" column="65" selection-start-line="8" selection-start-column="65" selection-end-line="8" selection-end-column="65" />
+          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/impl/UserServiceImpl.java">
+    <entry file="jar://$PROJECT_DIR$/../../mavenWarehouse/org/springframework/data/spring-data-jpa/1.11.22.RELEASE/spring-data-jpa-1.11.22.RELEASE.jar!/org/springframework/data/jpa/repository/JpaRepository.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="189">
-          <caret line="75" column="33" selection-start-line="75" selection-start-column="33" selection-end-line="75" selection-end-column="33" />
+        <state relative-caret-position="84">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/utils/PageUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/User.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="194">
-          <caret line="42" column="18" lean-forward="true" selection-start-line="42" selection-start-column="18" selection-end-line="42" selection-end-column="18" />
+        <state relative-caret-position="777">
+          <caret line="46" column="18" selection-start-line="46" selection-start-column="18" selection-end-line="46" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/respotitory/RoleRepository.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="26" column="16" lean-forward="true" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        <state relative-caret-position="147">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/exception/ExceptionResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="11" selection-start-line="11" selection-start-column="11" selection-end-line="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/exception/MyException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="8" column="31" lean-forward="true" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding>
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#266#267#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/CommonExceptionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="40" lean-forward="true" selection-start-line="20" selection-start-column="40" selection-end-line="20" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/utils/R.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="21" column="37" lean-forward="true" selection-start-line="21" selection-start-column="37" selection-end-line="21" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/EnterServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/UserController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1781">
-          <caret line="112" column="69" selection-start-line="112" selection-start-column="69" selection-end-line="112" selection-end-column="69" />
+        <state relative-caret-position="483">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+          <folding>
+            <element signature="method#saveUser#0;class#UserController#0" />
+            <element signature="method#update#0;class#UserController#0" />
+            <element signature="method#deletes#0;class#UserController#0" />
+            <element signature="method#Login#0;class#UserController#0" />
+            <element signature="method#findByNamePermission#0;class#UserController#0" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/Role.java">
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63">
-          <caret line="13" column="9" selection-start-line="13" selection-start-column="9" selection-end-line="13" selection-end-column="9" />
+        <state relative-caret-position="84">
+          <caret line="7" column="26" selection-start-line="7" selection-start-column="26" selection-end-line="7" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/RoleService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="12" column="17" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1417,12 +1420,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/RoleController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="411">
+          <caret line="58" column="37" selection-start-line="58" selection-start-column="37" selection-end-line="58" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#562#563#0" expanded="true" />
-            <element signature="e#588#589#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/errors-erver/src/main/java/com/itxwl/shiroserver/exception/ExceptionEnum.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/Role.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="65">
+          <caret line="40" column="66" selection-start-line="40" selection-start-column="64" selection-end-line="40" selection-end-column="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/impl/RoleServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="67" column="25" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="169" column="12" selection-start-line="169" selection-start-column="12" selection-end-line="169" selection-end-column="12" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
