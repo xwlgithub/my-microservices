@@ -14,7 +14,6 @@ import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
 import org.springframework.stereotype.Service;
-
 import javax.transaction.Transactional;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -40,13 +39,9 @@ public class RoleServiceImpl implements RoleService {
     }
     //查询
     @Override
-    public List<Role> findAll(Integer current, Integer size) {
+    public List<Role> findAll() {
         String sql ="";
-        if (current==null &&size==null){
             sql="select * from role order by create_time desc";
-        }else {
-            sql="select * from role ORDER BY create_time desc limit "+(current-1)+","+size+"";
-        }
         List<Role> list= jdbcTemplate.query(sql, new RowMapper<Role>() {
             @Override
             public Role mapRow(ResultSet resultSet, int i) throws SQLException {

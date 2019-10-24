@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * 菜单栏
+ * api实体
  */
 @Entity
 @Table(name = "pe_permission_api")
@@ -20,8 +20,11 @@ public class PermissionApi {
     //api路径
     @Column(name = "api_url")
     private String apiUrl;
-     //按钮名称
+     //api名称
     @Column(name = "api_method")
     private String apiMethod;
+    //权限id
+    @Column(name = "permission_id")
+    private String permissionId;
 
 }

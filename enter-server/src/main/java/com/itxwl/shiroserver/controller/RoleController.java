@@ -42,7 +42,7 @@ public class RoleController {
      */
     @GetMapping("findAll")
     public PageUtil<Role> findAll(Integer current,Integer size){
-       List<Role> roleList= roleService.findAll(current,size);
+       List<Role> roleList= roleService.findAll();
        PageUtil<Role> pageUtil=new PageUtil<Role>(current,size,roleList);
        return pageUtil;
     }

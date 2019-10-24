@@ -1,5 +1,7 @@
 package com.itxwl.shiroserver.service.impl;
 
+import com.itxwl.shiroserver.dto.PermisssCode;
+import com.itxwl.shiroserver.entiry.PermissionDto;
 import com.itxwl.shiroserver.entiry.Role;
 import com.itxwl.shiroserver.entiry.User;
 import com.itxwl.shiroserver.exception.ExceptionEnum;
@@ -8,8 +10,11 @@ import com.itxwl.shiroserver.respotitory.RoleRepository;
 import com.itxwl.shiroserver.respotitory.UserRepository;
 import com.itxwl.shiroserver.service.UserService;
 import com.itxwl.shiroserver.utils.IdWorker;
+import com.itxwl.shiroserver.utils.JwtUtil;
+import io.jsonwebtoken.Claims;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang.StringUtils;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
@@ -28,6 +33,8 @@ public class UserServiceImpl implements UserService {
     private JdbcTemplate jdbcTemplate;
     private IdWorker idWorker;
     private RoleRepository roleRepository;
+    @Autowired
+    private JwtUtil jwtUtil;
 
     /**
      * 保存
@@ -127,6 +134,11 @@ public class UserServiceImpl implements UserService {
         }
         return true;
     }
+    @Override
+    public User getUser(String name, String password) throws MyException {
+        User user = userRepository.findUserByName(name);
+        return user;
+    }
 
     /**
      * 分配角色逻辑
@@ -160,15 +172,77 @@ public class UserServiceImpl implements UserService {
 
             }
         }
-        String[] split1 = deIds.split(",");
-        try {
-            for (String s : split1) {
-                String sqldelete="delete  from ro_user where user_id="+userId+" and role_id="+s;
-                jdbcTemplate.update(sqldelete);
+        if (StringUtils.isNotEmpty(deIds)) {
+            String[] split1 = deIds.split(",");
+            try {
+                for (String s : split1) {
+                    String sqldelete = "delete  from ro_user where user_id=" + userId + " and role_id=" + s;
+                    jdbcTemplate.update(sqldelete);
+                }
+            } catch (DataAccessException e) {
+                // throw  new MyException(ExceptionEnum.DELETE_ERROR);
+                e.printStackTrace();
             }
-        } catch (DataAccessException e) {
-            throw  new MyException(ExceptionEnum.DELETE_ERROR);
         }
         return true;
+    }
+    //识别tocken 返回该用户所属权限信息
+    @Override
+    public PermissionDto findUserPermissions(String tocken) {
+        Claims analysis = jwtUtil.analysis(tocken);
+        String id = analysis.getId();
+        List<String> permissionListIds=new LinkedList<>();
+        List<PermisssCode> permisssCodes = jdbcTemplate.query("SELECT\n" +
+                "id,pe_name,pe_code\n" +
+                "FROM\n" +
+                "\tprimission \n" +
+                "WHERE\n" +
+                "\tid IN ( SELECT pe_id FROM pe_role WHERE ro_id IN ( SELECT role_id FROM ro_user WHERE user_id = '" + id + "' ) )", new RowMapper<PermisssCode>() {
+            @Override
+            public PermisssCode mapRow(ResultSet resultSet, int i) throws SQLException {
+                PermisssCode permisssCode = new PermisssCode();
+                permisssCode.setPeCode(resultSet.getString("pe_code"));
+                permisssCode.setPeName(resultSet.getString("pe_name"));
+                permisssCode.setId(resultSet.getString("id"));
+                permissionListIds.add(permisssCode.getId());
+                return permisssCode;
+            }
+        });
+        List<String> apis=null;
+        List<String> pointCodes=null;
+        if (permisssCodes.size()!=0){
+            String permissStrings = StringUtils.join(permissionListIds, ",");
+             apis = jdbcTemplate.query("\tSELECT api_method FROM pe_permission_api WHERE permission_id in " +
+                    "(" + permissStrings + ")\n", new RowMapper<String>() {
+                @Override
+                public String mapRow(ResultSet resultSet, int i) throws SQLException {
+                    return resultSet.getString("api_method");
+                }
+            });
+             pointCodes = jdbcTemplate.query("\tSELECT point_code FROM pe_permission_point WHERE permission_id in " +
+                    "(" + permissStrings + ")", new RowMapper<String>() {
+                @Override
+                public String mapRow(ResultSet resultSet, int i) throws SQLException {
+                    return resultSet.getString("point_code");
+                }
+            });
+        }
+        if (permisssCodes.size()==0){
+            return new PermissionDto();
+        }
+        Set<PermisssCode> codes=new HashSet<>(permisssCodes);
+        Set<String> aPis=null;
+        if (apis.size()==0){
+             aPis=new HashSet<>();
+        }else {
+             aPis=new HashSet<>(apis);
+        }
+        Set<String> points=null;
+        if (pointCodes.size()==0){
+            points=new HashSet<>();
+        }else {
+            points=new HashSet<>(pointCodes);
+        }
+        return new PermissionDto(codes,aPis,points);
     }
 }

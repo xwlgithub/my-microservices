@@ -2,10 +2,14 @@ package com.itxwl.shiroserver.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
+import com.itxwl.shiroserver.entiry.Permission;
+import com.itxwl.shiroserver.entiry.PermissionDto;
 import com.itxwl.shiroserver.entiry.User;
 import com.itxwl.shiroserver.exception.MyException;
 import com.itxwl.shiroserver.service.UserService;
+import com.itxwl.shiroserver.utils.JwtUtil;
 import com.itxwl.shiroserver.utils.PageUtil;
+import com.itxwl.shiroserver.utils.R;
 import lombok.AllArgsConstructor;
 import org.apache.commons.lang.StringUtils;
 
@@ -13,9 +17,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.ws.rs.OPTIONS;
+import java.util.Date;
 import java.util.HashMap;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
 
@@ -28,7 +31,7 @@ import java.util.Map;
 @CrossOrigin
 public class UserController {
     private UserService userService;
-
+    private JwtUtil jwtUtil;
     /**
      * 分配角色
      * @param userId
@@ -153,10 +156,10 @@ public class UserController {
     }
 
     /**
-     * 用户登录校验
+     * 用户登录校验->生成tocken
      */
     @PostMapping(value = "Login")
-    public Map<String, Object> Login(String name, String password, HttpServletRequest request) {
+    public Map<String, Object> Login(@RequestParam String name, @RequestParam String password) {
         Map<String, Object> map = new HashMap<>();
         Boolean isSuccess = null;
         try {
@@ -167,27 +170,19 @@ public class UserController {
         }
         if (isSuccess) {
             map.put("success", true);
+            map.put("tocKen", jwtUtil.createTocken(userService.getUser(name,password).getId(),new Date().toString()));
             return map;
         }
         map.put("error", "系统异常");
         return map;
     }
-
     /**
-     * 根据不同的用户获得不同的权限
-     * @param name
-     * @return
+     * 验证tocken 返回权限信息
      */
-    @GetMapping(value = "findByNamePermission")
-    public List<String> findByNamePermission(String name){
-//        List<String> list=new LinkedList<>();
-//        if (name.equals("4")){
-//                list.add("updates");
-//                list.add("deletes");
-//        }else {
-//            list.add("updates");
-//        }
-        return null;
+    @GetMapping(value = "findUserPermissions")
+    public R<PermissionDto> findUserPermissions(@RequestParam String tocken){
+        PermissionDto permissionDto=   userService.findUserPermissions(tocken);
+        return R.data(permissionDto);
     }
 
 }

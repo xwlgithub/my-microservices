@@ -8,7 +8,7 @@ import java.util.List;
 public interface RoleService {
     Boolean add(Role role);
 
-    List<Role> findAll(Integer current, Integer size);
+    List<Role> findAll();
 
     List<String> findRolesByUserId(String userId) throws MyException;
 }

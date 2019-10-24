@@ -1,5 +1,6 @@
 package com.itxwl.shiroserver.service;
 
+import com.itxwl.shiroserver.entiry.PermissionDto;
 import com.itxwl.shiroserver.entiry.User;
 import com.itxwl.shiroserver.exception.MyException;
 
@@ -31,6 +32,7 @@ public interface UserService  {
     void update(User user);
 
     Boolean Login(String name, String password) throws MyException;
+    User getUser(String name, String password) throws MyException;
 
     /**
      * 分配角色
@@ -40,4 +42,5 @@ public interface UserService  {
      */
     Boolean withRole(String userId, String roleIds,String deleIds);
 
+    PermissionDto findUserPermissions(String tocken);
 }

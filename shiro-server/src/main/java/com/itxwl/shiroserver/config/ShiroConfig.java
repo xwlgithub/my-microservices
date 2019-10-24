@@ -42,11 +42,14 @@ public class ShiroConfig {
 
         //authc:所有url都必须认证通过才可以访问; anon:所有url都都可以匿名访问,先配置anon再配置authc。
         filterChainMap.put("/loginFrom", "anon");
+        filterChainMap.put("/swagger-ui.html", "anon");
         filterChainMap.put("/login", "anon");
         filterChainMap.put("/success", "anon");
         filterChainMap.put("/LoginJwtProce", "anon");
         filterChainMap.put("/getJwtWithHave", "anon");
         filterChainMap.put("/delete", "anon");
+        filterChainMap.put("/webjars/**", "anon");
+        filterChainMap.put("/swagger-resources/**", "anon");
         /**
          * 添加授权过滤器 验证当前用户是否有删除权限,如果没有跳转未授权页面或抛出异常信息
          */

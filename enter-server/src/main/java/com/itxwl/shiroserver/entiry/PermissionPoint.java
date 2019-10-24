@@ -8,7 +8,7 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 
 /**
- * 菜单栏
+ * 按钮
  */
 @Entity
 @Table(name = "pe_permission_point")
@@ -17,6 +17,9 @@ public class PermissionPoint {
 
     @Id
     private String id;
+    //权限id
+    @Column(name = "permission_id")
+    private String permissionId;
     //菜单编码
     @Column(name = "point_code")
     private String pointCode;
