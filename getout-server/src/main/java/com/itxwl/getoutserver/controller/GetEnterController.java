@@ -26,7 +26,7 @@ public class GetEnterController {
      * 调用远程user接口
      * @return
      */
-    @ApiOperation(value = "分页",notes ="有一个参数",httpMethod = "get")
+    @ApiOperation(value = "分页",notes ="有一个参数",httpMethod = "GET")
     @ApiImplicitParams(
             {@ApiImplicitParam(name = "name", value = "姓名参数",paramType = "query",
                     dataType = "String",required = true)})
@@ -49,7 +49,7 @@ public class GetEnterController {
 //        }
         return users;
     }
-    @ApiOperation(value = "修改",notes ="对象",httpMethod = "put")
+    @ApiOperation(value = "修改",notes ="对象",httpMethod = "PUT")
     @GetMapping(value = "/update")
     public List<User> save(@RequestParam("name") String name){
         System.out.println("参数"+name);

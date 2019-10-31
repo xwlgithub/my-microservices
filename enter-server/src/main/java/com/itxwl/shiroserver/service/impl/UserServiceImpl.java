@@ -243,6 +243,6 @@ public class UserServiceImpl implements UserService {
         }else {
             points=new HashSet<>(pointCodes);
         }
-        return new PermissionDto(codes,aPis,points);
+        return new PermissionDto(codes,points,aPis);
     }
 }

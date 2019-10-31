@@ -39,7 +39,7 @@ public class JwtUtil {
     }
 
     public static void main(String[] args) {
-        JwtBuilder builder = Jwts.builder().setId("1181130780433424384").setSubject(new Date().toString()).setIssuedAt(new Date())
+        JwtBuilder builder = Jwts.builder().setId("1178556359860453376").setSubject(new Date().toString()).setIssuedAt(new Date())
                 .signWith(SignatureAlgorithm.HS256, "xuewenliang");
         String compact = builder.compact();
         System.out.println(compact);

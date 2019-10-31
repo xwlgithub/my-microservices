@@ -4,11 +4,23 @@ spring:
   application:
     name: getout-server
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    username: root
-    url: jdbc:mysql://localhost:3306/microservices?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
-    # sql is update
-    password: root
+    #动态数据源配置
+    dynamic:
+      #设置默认的数据源或者数据源组
+      primary: master
+      datasource:
+        master:
+          driver-class-name: com.mysql.jdbc.Driver
+          username: root
+          url: jdbc:mysql://localhost:3306/tfenergy?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+          # sql is update
+          password: root
+        other:
+          driver-class-name: com.mysql.jdbc.Driver
+          username: root
+          url: jdbc:mysql://192.168.0.7:3306/tfenergy?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+            # sql is update
+          password: root
   jpa:
     hibernate:
       ddl-auto: update

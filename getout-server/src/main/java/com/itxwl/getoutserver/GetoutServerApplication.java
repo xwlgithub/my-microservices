@@ -6,6 +6,7 @@ import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.feign.EnableFeignClients;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.ComponentScans;
+import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @SpringBootApplication
@@ -15,7 +16,8 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
  */
 @EnableFeignClients
 @EnableSwagger2
-@ComponentScan({"com.itxwl.getoutserver.config","com.itxwl.getoutserver.controller"})
+@ComponentScan("com.itxwl")
+@EnableAspectJAutoProxy
 public class GetoutServerApplication {
 
     public static void main(String[] args) {
