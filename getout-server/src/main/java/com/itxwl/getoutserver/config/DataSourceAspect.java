@@ -1,97 +1,99 @@
 package com.itxwl.getoutserver.config;
 
 //import com.baomidou.dynamic.datasource.annotation.DS;
+
 import com.baomidou.dynamic.datasource.annotation.DS;
-import com.itxwl.getoutserver.service.impl.CompileShowServiceImpl;
 import javassist.*;
-import javassist.bytecode.*;
-import javassist.bytecode.annotation.Annotation;
-import javassist.bytecode.annotation.LongMemberValue;
-import javassist.bytecode.annotation.StringMemberValue;
+import javassist.bytecode.ClassFile;
+import javassist.bytecode.ConstPool;
+import javassist.bytecode.annotation.*;
 import org.aspectj.lang.JoinPoint;
-import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.*;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 import org.springframework.core.Ordered;
-import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.request.RequestAttributes;
+import org.springframework.web.context.request.RequestContextHolder;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.List;
 import java.util.Map;
+import java.util.Objects;
 
 @Component
 //切面点
-@Order(-50)
+//@Order(Ordered.LOWEST_PRECEDENCE - 1)
 @Aspect
-@EnableAspectJAutoProxy
-public class DataSourceAspect   implements Ordered {
-
+//@EnableAspectJAutoProxy
+public class DataSourceAspect implements Ordered {
     //以业务层为切面
-    @Pointcut("execution(* com.itxwl.getoutserver.service.impl..*(..))")
+    //这块我改成controller之后  可以得
+    @Pointcut("execution(* com.itxwl.getoutserver.service.impl..*(..))")//这里改成controller切面
     //@Pointcut("@annotation(com.itxwl.getoutserver.config.DS)")
     public void dataSourcePointcut() {
-    }
 
-    //
+    }
     @SuppressWarnings("all")
     @Before("dataSourcePointcut()")
-    public  void before(JoinPoint joinPoint) throws Exception {
+    public void before(JoinPoint joinPoint) throws Exception {
         /**
          * 根据用户信息
          */
         Object target = joinPoint.getTarget();
         // String name = joinPoint.getSignature().getName();
         //.forName("com.itxwl.getoutserver.service.impl.CompileShowServiceImpl")
-        Class aClass1 = target.getClass();
+        Class<?> aClass1 = target.getClass();
+        //新建类
+        ClassPool classPool=ClassPool.getDefault();
+        CtClass ctClass = classPool.get(aClass1.getName());
+        ClassFile classFile = ctClass.getClassFile();
+        List methods1 = classFile.getMethods();
+
         String name = aClass1.getName();
-        //创建新的类
-        ClassPool pool = ClassPool.getDefault();
-        //如果该类已经存在替换
-        CtClass ctClass = pool.get(name);
-        System.out.println("当前所在包"+name);
-        /**
-         *
-         */
-        Class  aClass=aClass1.getClass().forName("com.itxwl.getoutserver.service.impl.CompileShowServiceImpl");
+        System.out.println("类路径" + name);
+        Class aClass = aClass1.getClass().forName(name);
         //得到类下得所有方法
+
         Method[] methods = aClass.getDeclaredMethods();
         for (Method method : methods) {
+            //获得注解
             DS ds = method.getAnnotation(DS.class);
             //修改属性值起
             InvocationHandler invocationHandler = Proxy.getInvocationHandler(ds);
             Field f = invocationHandler.getClass().getDeclaredField("memberValues");
+            //设置可修改权限
             f.setAccessible(true);
             Map<String, Object> memberValues = (Map<String, Object>) f.get(invocationHandler);
             //获得注解属性~
             String val = (String) memberValues.get("value");
             System.out.println("改变前:" + val);
-            if (val.equals("other")){
+            if (val.equals("other")) {
                 memberValues.put("value", "mather");
-            }else {
+            } else {
                 //覆盖之前属性值进行修改
                 memberValues.put("value", "other");
             }
             System.out.println("改变后" + memberValues.get("value"));
-//            Method[] declaredMethods = ds.annotationType().getDeclaredMethods();
-//            for (Method method1 : declaredMethods) {
-//                String invoke = (String) method1.invoke(ds, null);
-//                System.out.println(invoke);
-//            }
+            Method[] declaredMethods = ds.annotationType().getDeclaredMethods();
+            for (Method method1 : declaredMethods) {
+                String invoke = (String) method1.invoke(ds, null);
+                System.out.println(invoke);
+            }
         }
     }
+
     //
     @SuppressWarnings("all")
-    @After("dataSourcePointcut()")
+     @After("dataSourcePointcut()")
     public void after(JoinPoint joinPoint) throws Exception {
-            DynamicDataSourceConextHolder.clearDateSourceType();
-        }
+        System.out.println("我啥时候执行");
+
+    }
 
     @Override
     public int getOrder() {
-        return 2;
+        return 1;
     }
 }

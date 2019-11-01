@@ -15,8 +15,8 @@ public class CompileShow {
     private CompileShowService compileShowService;
 
     @GetMapping(value = "/findAtimerByName")
-    public String findAtimerByName(String id){
-      return   compileShowService.findAtimerByName(id);
+    public String findAtimerByName(){
+      return   compileShowService.findAtimerByName();
     }
 
 }
