@@ -21,6 +21,11 @@ import java.util.Map;
 public class RoleController {
     private RoleService roleService;
 
+    /**
+     * 添加
+     * @param role
+     * @return
+     */
     @PostMapping("add")
     public Map<String,Object> addRole(@RequestBody Role role){
         Map<String,Object> map=new HashMap<>();
@@ -63,6 +68,54 @@ public class RoleController {
         return new R(true,list);
     }
 
+    /**
+     * 删除
+     * @param id
+     * @return
+     */
+    @DeleteMapping(value = "deleteRoleById/{id}")
+    public Map<String,Object> deleteRoleById(@PathVariable("id") String id){
+        Map<String,Object> map=new HashMap<>();
+        Boolean isSuccess=false;
+        try {
+             isSuccess=roleService.deleteRoleById(id);
+        } catch (MyException e) {
+            map.put("success",e.getExceptionEnum().getMessage());
+           return map;
+        }
+        if (isSuccess) {
+            map.put("success", true);
+        }
+        return map;
+    }
+
+    /**
+     * 分配权限
+     * @param roleId
+     * @param permissIds
+     * @return
+     */
+    @PostMapping(value = "authonRoleById")
+    public Map<String,Object> authonRoleById(@RequestParam("roleId") String roleId,@RequestParam("permissIds")String permissIds,@RequestParam("deteids")String deteids){
+        Map<String,Object> map=new HashMap<>();
+        Boolean isSuccess=false;
+        try {
+            isSuccess= roleService.authonRoleById(roleId,permissIds,deteids);
+        } catch (MyException e) {
+            map.put("success",e.getExceptionEnum().getMessage());
+            return map;
+        }
+        if (isSuccess) {
+            map.put("success", true);
+        }
+        return map;
+    }
+
+
+    @RequestMapping(value = "deleteRoleById",method = RequestMethod.OPTIONS)
+    public boolean deleteRoleById(){
+        return true;
+    }
     /**
      * 解决options
      * @return

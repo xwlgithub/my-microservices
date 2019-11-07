@@ -1,5 +1,7 @@
 package com.itxwl.shiroserver.controller;
 
+import com.itxwl.shiroserver.dto.PermissChildrenDto;
+import com.itxwl.shiroserver.dto.PermissDto;
 import com.itxwl.shiroserver.dto.PermonDto;
 import com.itxwl.shiroserver.entiry.Permission;
 import com.itxwl.shiroserver.entiry.PermissionApi;
@@ -7,6 +9,7 @@ import com.itxwl.shiroserver.entiry.PermissionPoint;
 import com.itxwl.shiroserver.service.PermissionService;
 import com.itxwl.shiroserver.utils.IdWorker;
 import com.itxwl.shiroserver.utils.PageUtil;
+import com.itxwl.shiroserver.utils.R;
 import lombok.AllArgsConstructor;
 import org.springframework.data.domain.Page;
 import org.springframework.web.bind.annotation.*;
@@ -30,6 +33,26 @@ public class PermissionController {
     public List<PermonDto> findAllPerion(){
         List<PermonDto> pageUtil= permissionService.findAllPerion();
         return pageUtil;
+    }
+
+    /**
+     * 树形菜单封装
+     * @return
+     */
+    @GetMapping("/findAllPerions")
+    public R findAllPerions(){
+        List<PermissDto> pageUtil= permissionService.findAllPerions();
+        return R.data(pageUtil);
+    }
+
+    /**
+     * 根据角色获取所属权限信息
+     * @return
+     */
+    @GetMapping("/findRoleByPersId")
+    public R findRoleByPersId(@RequestParam("roleId") String roleId){
+        List<PermissChildrenDto> pageUtil=permissionService.findRoleByPersId(roleId);
+        return R.data(pageUtil);
     }
 
     /**

@@ -15,7 +15,8 @@ public enum ExceptionEnum {
     USERNAME_AND_PSD_ERROR("用户名或密码错误",500),
     SUCCESS("success",200),
     NOT_LOGIN("请登录后再访问",401),
-    SHIRO_UNDEFINED("权限不足",401)
+    SHIRO_UNDEFINED("权限不足",401),
+    AUTH_ROLE_WITH_EXCEPTION("分配权限异常",500)
     ;
     //异常信息existence
     private String message;

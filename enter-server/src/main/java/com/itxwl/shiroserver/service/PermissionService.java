@@ -1,5 +1,7 @@
 package com.itxwl.shiroserver.service;
 
+import com.itxwl.shiroserver.dto.PermissChildrenDto;
+import com.itxwl.shiroserver.dto.PermissDto;
 import com.itxwl.shiroserver.dto.PermonDto;
 import com.itxwl.shiroserver.entiry.Permission;
 import com.itxwl.shiroserver.entiry.PermissionApi;
@@ -15,4 +17,8 @@ public interface PermissionService {
     List<PermissionPoint> findPointById(String id);
     //根据按钮id获取对应API
     PermissionApi findApiById(String id);
+
+    List<PermissDto> findAllPerions();
+
+    List<PermissChildrenDto> findRoleByPersId(String roleId);
 }

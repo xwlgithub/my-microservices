@@ -11,4 +11,8 @@ public interface RoleService {
     List<Role> findAll();
 
     List<String> findRolesByUserId(String userId) throws MyException;
+
+    Boolean deleteRoleById(String id) throws MyException;
+
+    Boolean authonRoleById(String roleId, String permissIds,String deteids)throws MyException;
 }

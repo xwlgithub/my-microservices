@@ -54,6 +54,12 @@ public class RoleServiceImpl implements RoleService {
             return list;
     }
 
+    /**
+     * 根据用户id获取所属角色id
+     * @param userId
+     * @return
+     * @throws MyException
+     */
     @Override
     public List<String> findRolesByUserId(String userId)  throws MyException {
         List<String> list= null;
@@ -69,5 +75,75 @@ public class RoleServiceImpl implements RoleService {
             throw  new MyException(ExceptionEnum.EXCEPTION_RUN_ERROR);
         }
         return list;
+    }
+
+    /**
+     * 根据角色id删除
+     * @param id
+     * @return
+     * @throws MyException
+     */
+    @Override
+    public Boolean deleteRoleById(String id) throws MyException {
+        try {
+            roleRepository.delete(id);
+        } catch (Exception e) {
+            throw  new MyException(ExceptionEnum.DELETE_ERROR);
+        }
+        return true;
+    }
+
+    /**
+     * 为角色分配权限
+     * 待核查
+     * @param roleId    角色id
+     * @param permissIds    权限id
+     * @return
+     * @throws MyException
+     */
+    @Override
+    @Transactional
+    public Boolean authonRoleById(String roleId, String permissIds,String deteids)throws MyException {
+        System.out.println(deteids.length());
+        if (!StringUtils.isEmpty(deteids)){
+           for (String ids : deteids.split(",")) {
+               if (ids==null||ids.equals("")){
+                   continue;
+               }
+               jdbcTemplate.update("delete from pe_role where pe_id="+ids);
+           }
+       }
+        String[] split = permissIds.split(",");
+        try {
+            for (String permissId : split) {
+                String sql="insert into pe_role(ro_id,pe_id)  values("+roleId+","+permissId+") on duplicate KEY update pe_id="+permissId;
+                jdbcTemplate.update(sql);
+            }
+        } catch (DataAccessException e) {
+            //throw  new MyException(ExceptionEnum.AUTH_ROLE_WITH_EXCEPTION);
+            e.printStackTrace();
+        }
+        //如果只保留了一个菜单父栏 也删除掉
+        List<String> peIds = jdbcTemplate.query("SELECT pe_id FROM pe_role WHERE ro_id ='" + roleId + "' AND pe_id in (SELECT id  FROM primission WHERE pid=0)", new RowMapper<String>() {
+            @Override
+            public String mapRow(ResultSet resultSet, int i) throws SQLException {
+                return resultSet.getString("pe_id");
+            }
+        });
+//        if (peIds.size()!=0){
+//            for (String permissId : peIds) {
+//                String ids = jdbcTemplate.queryForObject("SELECT GROUP_CONCAT(id SEPARATOR ',') as 'ids'  FROM primission WHERE pid='" + permissId + "'", String.class);
+//                List<String> strings = jdbcTemplate.query("SELECT pe_id FROM pe_role WHERE pe_id <> '" + permissId + "'  AND ro_id='" + roleId + "' AND pe_id in (" + ids + ")", new RowMapper<String>() {
+//                    @Override
+//                    public String mapRow(ResultSet resultSet, int i) throws SQLException {
+//                        return resultSet.getString("pe_id");
+//                    }
+//                });
+//                if (strings.size()==0){
+//                    jdbcTemplate.update("delete from pe_role where pe_id="+permissId);
+//                }
+//            }
+//        }
+        return true;
     }
 }
