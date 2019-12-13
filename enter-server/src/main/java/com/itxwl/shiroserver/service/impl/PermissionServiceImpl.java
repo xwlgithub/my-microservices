@@ -1,8 +1,6 @@
 package com.itxwl.shiroserver.service.impl;
 
-import com.itxwl.shiroserver.dto.PermissChildrenDto;
-import com.itxwl.shiroserver.dto.PermissDto;
-import com.itxwl.shiroserver.dto.PermonDto;
+import com.itxwl.shiroserver.dto.*;
 import com.itxwl.shiroserver.entiry.Permission;
 import com.itxwl.shiroserver.entiry.PermissionApi;
 import com.itxwl.shiroserver.entiry.PermissionPoint;
@@ -52,6 +50,17 @@ public class PermissionServiceImpl implements PermissionService {
                 public PermissChildrenDto mapRow(ResultSet resultSet, int i) throws SQLException {
                     PermissChildrenDto permissChildrenDto = new PermissChildrenDto();
                     permissChildrenDto.setId(resultSet.getString("id"));
+                    //根据权限ID获取所属按钮
+                    List<PointDto> pointDtos = jdbcTemplate.query("select id,point_name from pe_permission_point where permission_id=" + permissChildrenDto.getId(), new RowMapper<PointDto>() {
+                        @Override
+                        public PointDto mapRow(ResultSet resultSet, int i) throws SQLException {
+                            PointDto pointDto = new PointDto();
+                            pointDto.setId(resultSet.getString("id"));
+                            pointDto.setLabel(resultSet.getString("point_name"));
+                            return pointDto;
+                        }
+                    });
+                    permissChildrenDto.setChildren(pointDtos);
                     permissChildrenDto.setLabel(resultSet.getString("pe_name"));
                     return permissChildrenDto;
                 }
@@ -69,8 +78,8 @@ public class PermissionServiceImpl implements PermissionService {
      */
     @Override
     @SuppressWarnings("all")
-    public List<PermissChildrenDto> findRoleByPersId(String roleId) {
-        List<PermissChildrenDto> list=new LinkedList<>();
+    public List<PPPDto> findRoleByPersId(String roleId) {
+        List<PPPDto> list=new LinkedList<>();
         //获取角色关联权限ID 多
         String sql="select pe_id from pe_role where ro_id="+roleId;
         List<String> peIds = jdbcTemplate.query(sql, new RowMapper<String>() {
@@ -85,24 +94,71 @@ public class PermissionServiceImpl implements PermissionService {
         //获取父节点菜单--筛选Pid
         String parentsIds = StringUtils.join(findPermissionByPid(), ",");
         Iterator<String> iterator = peIds.iterator();
+        List<PPPDto> list1=new LinkedList<>();
         while (iterator.hasNext()){
             String peId = iterator.next();
+            //判断父节点ID中是否包含当前ID
             if (parentsIds.contains(peId)){
+                //如果包含即删除
                 iterator.remove();
             }else {
-                PermissChildrenDto permissChildrenDto=new PermissChildrenDto();
-                jdbcTemplate.query("select id,pe_name from primission where id=" + peId, new RowMapper<PermissChildrenDto>() {
+
+                PPPDto permissChildrenDto=new PPPDto();
+                jdbcTemplate.query("select id,pe_name from primission where id=" + peId, new RowMapper<PPPDto>() {
                     @Override
-                    public PermissChildrenDto mapRow(ResultSet resultSet, int i) throws SQLException {
+                    public PPPDto mapRow(ResultSet resultSet, int i) throws SQLException {
                         permissChildrenDto.setId(resultSet.getString("id"));
+                        //根据子菜单id获取该角色应有按钮--->剔除子菜单只展示子菜单中按钮的id
+                        String sql="select id from pe_permission_point where  permission_id ="+permissChildrenDto.getId();
+                        List<String> pointIds = jdbcTemplate.query(sql, new RowMapper<String>() {
+                            @Override
+                            public String mapRow(ResultSet resultSet, int i) throws SQLException {
+                                return resultSet.getString("id");
+                            }
+                        });
+                        List<PointDto> pointDtoList=new LinkedList<>();
+                        String pointIdStrings = StringUtils.join(pointIds, ",");
+                        //根据角色id从已经分配的按钮中获取按钮
+                        String rolePointIds="select * from role_point where  roleId ="+roleId;
+                        List<PointDto> rolePointWithRoleIds = jdbcTemplate.query(rolePointIds, new RowMapper<PointDto>() {
+                            @Override
+                            public PointDto mapRow(ResultSet resultSet, int i) throws SQLException {
+                                PointDto pointDto = new PointDto();
+                                pointDto.setId(resultSet.getString("pointId"));
+                                //如果是按钮
+                                if (pointIdStrings.contains(pointDto.getId())){
+                                    PPPDto permissChildrenDto1=new PPPDto();
+                                    permissChildrenDto1.setId(pointDto.getId());
+                                    String pointName = jdbcTemplate.queryForObject("select point_name from pe_permission_point where id=?", String.class, new Object[]{pointDto.getId()});
+                                    permissChildrenDto1.setLabel(pointName);
+                                    list1.add(permissChildrenDto1);
+                                }
+
+                                return pointDto;
+                            }
+                        });
+                        //permissChildrenDto.setChildren(pointDtoList);
                         permissChildrenDto.setLabel(resultSet.getString("pe_name"));
+                        //如果该菜单没有对应按钮 也添加进去 让其正常显示
+                        String  sqlmenus="select *  from pe_permission_point where permission_id="+peId;
+                        List<PermissionPoint> query = jdbcTemplate.query(sqlmenus, new RowMapper<PermissionPoint>() {
+                            @Override
+                            public PermissionPoint mapRow(ResultSet resultSet, int i) throws SQLException {
+                                PermissionPoint rolePointDto = new PermissionPoint();
+                                rolePointDto.setPointName(resultSet.getString("point_name"));
+                                return rolePointDto;
+                            }
+                        });
+                        if (query.size()==0 || query==null){
+                            list1.add(permissChildrenDto);
+                        }
                         return permissChildrenDto;
                     }
                 });
-                list.add(permissChildrenDto);
-
+                //list.add(permissChildrenDto);
             }
         }
+        list.addAll(list1);
         return list;
     }
 

@@ -1,5 +1,6 @@
 package com.itxwl.shiroserver.controller;
 
+import com.itxwl.shiroserver.dto.PPPDto;
 import com.itxwl.shiroserver.dto.PermissChildrenDto;
 import com.itxwl.shiroserver.dto.PermissDto;
 import com.itxwl.shiroserver.dto.PermonDto;
@@ -51,7 +52,7 @@ public class PermissionController {
      */
     @GetMapping("/findRoleByPersId")
     public R findRoleByPersId(@RequestParam("roleId") String roleId){
-        List<PermissChildrenDto> pageUtil=permissionService.findRoleByPersId(roleId);
+        List<PPPDto> pageUtil=permissionService.findRoleByPersId(roleId);
         return R.data(pageUtil);
     }
 

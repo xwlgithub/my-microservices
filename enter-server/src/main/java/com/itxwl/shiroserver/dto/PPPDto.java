@@ -2,11 +2,8 @@ package com.itxwl.shiroserver.dto;
 
 import lombok.Data;
 
-import java.util.List;
-
 @Data
-public class PermissChildrenDto {
+public class PPPDto {
     private String id;
     private String label;
-    private List<PointDto> children;
 }

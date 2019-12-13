@@ -39,11 +39,7 @@ public class User  implements Serializable {
      * @param password
      * @param phoneNumber
      */
-    @ManyToMany
-    @JsonIgnore
-    @JoinTable(name ="ro_user",joinColumns = {
-            @JoinColumn(name = "user_id",referencedColumnName = "id")
-    },inverseJoinColumns = {@JoinColumn(name = "role_id",referencedColumnName = "id")})
+    @Transient
     private Set<Role> roles=new HashSet<>();
 
     public User (String id, String name, String password,String phoneNumber,String remark){

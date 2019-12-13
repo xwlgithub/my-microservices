@@ -31,15 +31,10 @@ public class Role implements Serializable{
     @Column(name = "role_type")
     private Integer roleType;
 
-    @JsonIgnore
-    @ManyToMany(mappedBy = "roles",cascade = {CascadeType.REMOVE,CascadeType.REFRESH})  //不维护中间表
+    @Transient
     private Set<User> users = new HashSet<User>();//角色与用户   多对多
 
-    @ManyToMany
-    @JsonIgnore
-    @JoinTable(name = "pe_role", joinColumns = {
-            @JoinColumn(name = "ro_id", referencedColumnName = "id")
-    }, inverseJoinColumns = {@JoinColumn(name = "pe_id", referencedColumnName = "id")})
+    @Transient
     private Set<Permission> permissions = new HashSet<>();
 
     public Role(String id, String roleName, String roleRemark, Date createTime, Set<User> users) {

@@ -1,5 +1,6 @@
 package com.itxwl.shiroserver.service;
 
+import com.itxwl.shiroserver.dto.PPPDto;
 import com.itxwl.shiroserver.dto.PermissChildrenDto;
 import com.itxwl.shiroserver.dto.PermissDto;
 import com.itxwl.shiroserver.dto.PermonDto;
@@ -20,5 +21,5 @@ public interface PermissionService {
 
     List<PermissDto> findAllPerions();
 
-    List<PermissChildrenDto> findRoleByPersId(String roleId);
+    List<PPPDto> findRoleByPersId(String roleId);
 }

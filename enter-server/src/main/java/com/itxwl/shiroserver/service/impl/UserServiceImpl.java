@@ -1,6 +1,7 @@
 package com.itxwl.shiroserver.service.impl;
 
 import com.itxwl.shiroserver.dto.PermisssCode;
+import com.itxwl.shiroserver.entiry.Permission;
 import com.itxwl.shiroserver.entiry.PermissionDto;
 import com.itxwl.shiroserver.entiry.Role;
 import com.itxwl.shiroserver.entiry.User;
@@ -69,6 +70,7 @@ public class UserServiceImpl implements UserService {
      * @return
      */
     @Override
+    @Transactional
     public Integer deletes(String id) throws Exception {
         try {
             userRepository.delete(id);
@@ -99,7 +101,7 @@ public class UserServiceImpl implements UserService {
     public List<User> findAll(String name) {
         List<User> userList = null;
         if (StringUtils.isNotEmpty(name)) {
-            String sql = "select *  from user where name like  '%" + name + "%'";
+            String sql = "select *  from user where name like  '%" + name + "%' and name <> 'xwl'";
             userList = jdbcTemplate.query(sql, new RowMapper<User>() {
                 @Override
                 public User mapRow(ResultSet resultSet, int i) throws SQLException {
@@ -111,6 +113,16 @@ public class UserServiceImpl implements UserService {
             });
         } else {
             userList = userRepository.findAll();
+            Iterator<User> iterator = userList.iterator();
+            String userNameisGo=null;
+            while (iterator.hasNext()){
+                User user = iterator.next();
+                if (user.getName().equals("xwl")){
+                    userNameisGo=user.getName();
+                    iterator.remove();
+                    break;
+                }
+            }
         }
         return userList;
     }
@@ -208,6 +220,7 @@ public class UserServiceImpl implements UserService {
                 return permisssCode;
             }
         });
+
         List<String> apis=null;
         List<String> pointCodes=null;
         if (permisssCodes.size()!=0){
@@ -219,8 +232,7 @@ public class UserServiceImpl implements UserService {
                     return resultSet.getString("api_method");
                 }
             });
-             pointCodes = jdbcTemplate.query("\tSELECT point_code FROM pe_permission_point WHERE permission_id in " +
-                    "(" + permissStrings + ")", new RowMapper<String>() {
+             pointCodes = jdbcTemplate.query("SELECT point_code FROM pe_permission_point WHERE  id in (SELECT pointId FROM role_point WHERE roleId in (SELECT role_id  FROM ro_user WHERE user_id= "+id+"))", new RowMapper<String>() {
                 @Override
                 public String mapRow(ResultSet resultSet, int i) throws SQLException {
                     return resultSet.getString("point_code");
@@ -236,6 +248,19 @@ public class UserServiceImpl implements UserService {
              aPis=new HashSet<>();
         }else {
              aPis=new HashSet<>(apis);
+        }
+        /**
+         * 暂时这样写
+         */
+        if (id.equals("1178556359860453376")){
+            pointCodes.add("user-add");
+            pointCodes.add("user-delete");
+            pointCodes.add("user-update");
+            pointCodes.add("user-with-role");
+            pointCodes.add("role-add");
+            pointCodes.add("role-delete");
+            pointCodes.add("role-update");
+            pointCodes.add("role-with-pon");
         }
         Set<String> points=null;
         if (pointCodes.size()==0){

@@ -96,11 +96,11 @@ public class RoleController {
      * @return
      */
     @PostMapping(value = "authonRoleById")
-    public Map<String,Object> authonRoleById(@RequestParam("roleId") String roleId,@RequestParam("permissIds")String permissIds,@RequestParam("deteids")String deteids){
+    public Map<String,Object> authonRoleById(@RequestParam("roleId") String roleId,@RequestParam("permissIds")String permissIds,@RequestParam("myDeleteds")String myDeleteds){
         Map<String,Object> map=new HashMap<>();
         Boolean isSuccess=false;
         try {
-            isSuccess= roleService.authonRoleById(roleId,permissIds,deteids);
+            isSuccess= roleService.authonRoleById(roleId,permissIds,myDeleteds);
         } catch (MyException e) {
             map.put("success",e.getExceptionEnum().getMessage());
             return map;
