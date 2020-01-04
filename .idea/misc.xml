@@ -13,6 +13,7 @@
         <option value="$PROJECT_DIR$/errors-erver/pom.xml" />
         <option value="$PROJECT_DIR$/shiro-test/pom.xml" />
         <option value="$PROJECT_DIR$/shiro-server/pom.xml" />
+        <option value="$PROJECT_DIR$/elastic-search-server/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

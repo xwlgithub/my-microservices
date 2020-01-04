@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="elastic-search-server" />
         <module name="enter-server" />
         <module name="errors-erver" />
         <module name="eureka-server" />
@@ -17,6 +18,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="common-server" target="1.5" />
+      <module name="elastic-search-server" target="1.8" />
       <module name="enter-server" target="1.8" />
       <module name="errors-erver" target="1.5" />
       <module name="eureka-server" target="1.8" />
@@ -33,6 +35,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="elastic-search-server" options="-parameters" />
       <module name="shiro-server" options="" />
     </option>
   </component>

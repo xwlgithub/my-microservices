@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/elastic-search-server/elastic-search-server.iml" filepath="$PROJECT_DIR$/elastic-search-server/elastic-search-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/enter-server/enter-server.iml" filepath="$PROJECT_DIR$/enter-server/enter-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/errors-erver/errors-erver.iml" filepath="$PROJECT_DIR$/errors-erver/errors-erver.iml" />
       <module fileurl="file://$PROJECT_DIR$/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/eureka-server/eureka-server.iml" />
