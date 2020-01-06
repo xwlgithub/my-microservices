@@ -20,6 +20,7 @@ import java.util.List;
 @Service
 @AllArgsConstructor
 public class ElasticSearchService {
+    //查询检索支持类
     @Autowired
     private ElasticsearchTemplate template;
     @Autowired
