@@ -2,29 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="db3cd2e8-a705-4044-a75c-784fc880b4ec" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_zaxxer_HikariCP_3_4_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__mysql_mysql_connector_java_5_1_48.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_jdbc_2_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_2_2_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic-search-server/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic-search-server/.mvn/wrapper/MavenWrapperDownloader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic-search-server/.mvn/wrapper/maven-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic-search-server/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic-search-server/mvnw" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic-search-server/mvnw.cmd" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic-search-server/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/ElasticSearchServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/controller/ElasticSearchController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/dao/XwLElasticDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/entity/MyNameList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/service/ElasticSearchService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic-search-server/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/elastic-search-server/src/test/java/com/itxwl/elasticsearchserver/ElasticSearchServerApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/service/ElasticSearchService.java" beforeDir="false" afterPath="$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/service/ElasticSearchService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/Listener.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/security-server/target/" />
     <ignored path="$PROJECT_DIR$/zuul-server/target/" />
@@ -75,8 +55,26 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/controller/ElasticSearchController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state relative-caret-position="-8">
+              <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/dao/XwLElasticDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/entity/MyNameList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-8">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -87,29 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/service/ElasticSearchService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/elastic-search-server/src/test/java/com/itxwl/elasticsearchserver/ElasticSearchServerApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="798">
-              <caret line="62" column="67" selection-start-line="62" selection-start-column="67" selection-end-line="62" selection-end-column="67" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/entity/MyNameList.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="327">
+              <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -129,8 +106,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>BAD</find>
-      <find>jdbcTemplate</find>
       <find>login_m</find>
       <find>txt_input txt_input2</find>
       <find>username</find>
@@ -159,6 +134,8 @@
       <find>findRoleByPersId</find>
       <find>findUserPermissions</find>
       <find>pe_role</find>
+      <find>Queue</find>
+      <find>rabbitTemplate</find>
     </findStrings>
     <dirStrings>
       <dir>D:\java\myworkspace\my-microservices\shiro-server\src\main\resources\Wopop_files</dir>
@@ -167,6 +144,7 @@
       <dir>D:\java\myworkspace\my-microservices\getout-server\src\main\java\com\itxwl\getoutserver\config</dir>
       <dir>D:\java\myworkspace\my-microservices\enter-server\src\main\java\com\itxwl\shiroserver\controller</dir>
       <dir>D:\java\myworkspace\my-microservices\enter-server\src\main\java\com\itxwl\shiroserver</dir>
+      <dir>D:\java\myworkspace\my-microservices\shiro-test\src\main\java\com.itxwl</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -176,7 +154,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/getout-server/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/getout-server/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/getout-server/src/main/java/com/itxwl/getoutserver/config/ConfigurationMaster.java" />
         <option value="$PROJECT_DIR$/getout-server/src/main/java/com/itxwl/getoutserver/config/ConfigurationOther.java" />
@@ -227,6 +204,7 @@
         <option value="$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/controller/ElasticSearchController.java" />
         <option value="$PROJECT_DIR$/elastic-search-server/src/test/java/com/itxwl/elasticsearchserver/ElasticSearchServerApplicationTests.java" />
         <option value="$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/service/ElasticSearchService.java" />
+        <option value="$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/Listener.java" />
       </list>
     </option>
   </component>
@@ -278,10 +256,10 @@
     <option name="jreName" value="1.8" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="589" />
-    <option name="y" value="79" />
-    <option name="width" value="1446" />
-    <option name="height" value="906" />
+    <option name="x" value="120" />
+    <option name="y" value="25" />
+    <option name="width" value="1529" />
+    <option name="height" value="962" />
   </component>
   <component name="ProjectId" id="1PUBFXXLYOZCR8FbRiiwEJmk5rM" />
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -314,7 +292,6 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -322,10 +299,171 @@
               <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
               <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="elastic-search-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="elastic-search-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="elastic-search-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="elastic-search-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="elastic-search-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="elastic-search-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itxwl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="elastic-search-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itxwl" type="462c0819:PsiDirectoryNode" />
+              <item name="elasticsearchserver" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="elastic-search-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itxwl" type="462c0819:PsiDirectoryNode" />
+              <item name="elasticsearchserver" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="elastic-search-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itxwl" type="462c0819:PsiDirectoryNode" />
+              <item name="elasticsearchserver" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="elastic-search-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itxwl" type="462c0819:PsiDirectoryNode" />
+              <item name="elasticsearchserver" type="462c0819:PsiDirectoryNode" />
+              <item name="entity" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="elastic-search-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itxwl" type="462c0819:PsiDirectoryNode" />
+              <item name="elasticsearchserver" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="getout-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="getout-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="getout-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="getout-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="getout-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="getout-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itxwl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="my-microservices" type="b2602c69:ProjectViewProjectNode" />
+              <item name="my-microservices" type="462c0819:PsiDirectoryNode" />
+              <item name="getout-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="itxwl" type="462c0819:PsiDirectoryNode" />
+              <item name="getoutserver" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,7 +481,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://D:/java/myworkspace/my-microservices/shiro-server/src/main/java/com/itxwl/shiroserver/session/CustomerSessionManager.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578104980497" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1578297087775" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/zuul-server/src/main/java/com/itxwl" />
     <property name="last_opened_file_path" value="$USER_HOME$/Downloads/workspace" />
@@ -359,7 +497,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="two.files.diff.last.used.folder" value="$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/repository" />
   </component>
   <component name="RecentsManager">
@@ -796,7 +934,8 @@
       <workItem from="1577943624845" duration="6254000" />
       <workItem from="1578100249369" duration="1948000" />
       <workItem from="1578103384727" duration="99000" />
-      <workItem from="1578103505941" duration="1469000" />
+      <workItem from="1578103505941" duration="7340000" />
+      <workItem from="1578287800463" duration="4357000" />
     </task>
     <task id="LOCAL-00001" summary="提交测试">
       <created>1563156210684</created>
@@ -903,7 +1042,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576200797087</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="提交">
+      <created>1578105129852</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1578105129853</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -939,7 +1085,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="654372000" />
+    <option name="totallyTimeSpent" value="664600000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -951,9 +1097,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="589" y="79" width="1446" height="906" extended-state="0" />
+    <frame x="-3" y="83" width="1529" height="962" extended-state="1" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49410224" visible="true" weight="0.1998557" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49410224" visible="true" weight="0.20966645" />
       <window_info id="Structure" order="1" sideWeight="0.50589776" side_tool="true" weight="0.21789321" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -1068,99 +1215,6 @@
     <option name="LAST_COMMIT_MESSAGE" value="提交" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/Role.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/entiry/Permission.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/UserController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="627">
-          <caret line="53" column="6" selection-start-line="53" selection-start-column="6" selection-end-line="53" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="760">
-          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/impl/PermissionServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3610">
-          <caret line="204" column="29" selection-start-line="204" selection-start-column="29" selection-end-line="204" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/utils/JwtUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="28" selection-start-line="28" selection-end-line="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/service/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4047">
-          <caret line="238" column="17" selection-start-line="238" selection-start-column="17" selection-end-line="238" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/utils/R.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/controller/PermissionController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="53" column="47" selection-start-line="53" selection-start-column="47" selection-end-line="53" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../../mavenWarehouse/org/springframework/data/spring-data-redis/1.8.22.RELEASE/spring-data-redis-1.8.22.RELEASE.jar!/org/springframework/data/redis/core/RedisTemplate.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1882">
-          <caret line="63" column="11" selection-start-line="63" selection-start-column="11" selection-end-line="63" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/utils/Redis.java" />
-    <entry file="file://$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/config/SystemConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="7" lean-forward="true" selection-start-line="14" selection-start-column="7" selection-end-line="14" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/config/ShiroConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-247">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/enter-server/src/main/java/com/itxwl/shiroserver/EnterServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="171">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elaste-search-server/src/main/resources/application.yml" />
     <entry file="file://$PROJECT_DIR$/elaste-search-server/pom.xml" />
     <entry file="file://$PROJECT_DIR$/elaste-search-server/src/main/java/com/itxwl/elastesearchserver/ElasteSearchServerApplication.java" />
     <entry file="jar://$PROJECT_DIR$/../../mavenWarehouse/junit/junit/4.12/junit-4.12.jar!/org/junit/runner/RunWith.class">
@@ -1189,13 +1243,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="309">
           <caret line="33" column="22" selection-start-line="33" selection-start-column="15" selection-end-line="33" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/dao/XwLElasticDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
         </state>
       </provider>
     </entry>
@@ -1291,13 +1338,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/ElasticSearchServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$PROJECT_DIR$/../../mavenWarehouse/org/springframework/data/spring-data-elasticsearch/3.2.3.RELEASE/spring-data-elasticsearch-3.2.3.RELEASE-sources.jar!/org/springframework/data/elasticsearch/repository/ElasticsearchRepository.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="303">
@@ -1311,9 +1351,6 @@
           <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/config/JwtInterceptor.java">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/controller/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -1329,30 +1366,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/controller/ElasticSearchController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/elastic-search-server/src/test/java/com/itxwl/elasticsearchserver/ElasticSearchServerApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="798">
+        <state relative-caret-position="223">
           <caret line="62" column="67" selection-start-line="62" selection-start-column="67" selection-end-line="62" selection-end-column="67" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/entity/MyNameList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1384,10 +1401,164 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/config/JwtInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-server/src/main/java/com/itxwl/shiroserver/config/ShiroConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="169">
+          <caret line="112" column="25" lean-forward="true" selection-start-line="112" selection-start-column="25" selection-end-line="112" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/crt/TestHttpsCrt.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="457">
+          <caret line="41" column="48" lean-forward="true" selection-start-line="41" selection-start-column="48" selection-end-line="41" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/danlie/Simglen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../../mavenWarehouse/com/rabbitmq/amqp-client/4.0.2/amqp-client-4.0.2-sources.jar!/com/rabbitmq/client/Channel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="298">
+          <caret line="831" column="11" selection-start-line="831" selection-start-column="11" selection-end-line="831" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/direct/Recv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="37" column="39" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/direct/Recv2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/direct/Send.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/tanout/Recv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/tanout/Recv2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/tanout/Send.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/ShiroTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="8" column="39" lean-forward="true" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
+          <folding>
+            <element signature="e#229#230#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/utils/ConnectionUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="27" column="81" lean-forward="true" selection-start-line="27" selection-start-column="81" selection-end-line="27" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/utils/DataSourceMysql.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/Listener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="26" column="39" lean-forward="true" selection-start-line="26" selection-start-column="39" selection-end-line="26" selection-end-column="39" />
+          <folding>
+            <element signature="e#860#861#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shiro-test/src/main/java/com.itxwl/rabbitmq/Recv.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="7" column="19" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/controller/ElasticSearchController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/dao/XwLElasticDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="5" column="70" selection-start-line="5" selection-start-column="70" selection-end-line="5" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/entity/MyNameList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/ElasticSearchServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="42" lean-forward="true" selection-start-line="10" selection-start-column="42" selection-end-line="10" selection-end-column="42" />
+          <folding>
+            <element signature="e#362#363#0" expanded="true" />
+            <element signature="e#443#444#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/elastic-search-server/src/main/java/com/itxwl/elasticsearchserver/service/ElasticSearchService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="20" column="35" lean-forward="true" selection-start-line="20" selection-start-column="35" selection-end-line="20" selection-end-column="35" />
+        <state relative-caret-position="327">
+          <caret line="34" column="7" lean-forward="true" selection-start-line="34" selection-start-column="7" selection-end-line="34" selection-end-column="7" />
         </state>
       </provider>
     </entry>
