@@ -26,7 +26,7 @@ hystrix:
       execution:
         isolation:
           thread:
-            timeoutInMilliseconds: 60000 #熔断响应时间
+            timeoutInMilliseconds: 6000 #熔断响应时间
 ribbon:
   #熔断读取时间
   ReadTimeout: 60000

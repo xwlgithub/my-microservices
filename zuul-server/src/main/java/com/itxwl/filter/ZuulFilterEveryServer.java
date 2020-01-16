@@ -1,5 +1,7 @@
 package com.itxwl.filter;
 
+import com.itxwl.shiroserver.exception.ExceptionEnum;
+import com.itxwl.shiroserver.exception.MyException;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 import com.netflix.zuul.exception.ZuulException;
@@ -44,17 +46,19 @@ public class ZuulFilterEveryServer extends ZuulFilter {
         //return false;
     }
 
+    /**
+     * 请求验证-判断请求头是否携带tocken
+     * @return
+     * @throws MyException
+     */
     @Override
-    public Object run() throws ZuulException {
-        RequestContext ctx = RequestContext.getCurrentContext();
-        HttpServletRequest request = ctx.getRequest();
-        String tocken = request.getParameter("access_tocken");
-        if (tocken==null||tocken.isEmpty()){
-            ctx.setSendZuulResponse(false);
-            ctx.setResponseStatusCode(401);
-            ctx.getResponse().setContentType("text/html;charset=UTF-8");
-            ctx.setResponseBody("请携带tocken参数!");
-        }
+    public Object run() throws MyException {
+//        RequestContext ctx = RequestContext.getCurrentContext();
+//        HttpServletRequest request = ctx.getRequest();
+//        String tocken = request.getParameter("access_tocken");
+//        if (tocken==null||tocken.isEmpty()){
+//            throw  new MyException(ExceptionEnum.TOCKEN_IS_NOTHAVE);
+//        }
         return null;
     }
 }

@@ -4,25 +4,11 @@ spring:
   application:
     name: getout-server
   datasource:
-    autoconfigure:
-      exclude: com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure
-    #动态数据源配置
-    dynamic:
-      #设置默认的数据源或者数据源组
-      primary: master
-      datasource:
-        master:
-          driver-class-name: com.mysql.jdbc.Driver
-          username: root
-          url: jdbc:mysql://localhost:3306/tfenergy?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    url: jdbc:mysql://localhost:3306/myservers?characterEncoding=utf-8
           # sql is update
-          password: root
-        other:
-          driver-class-name: com.mysql.jdbc.Driver
-          username: root
-          url: jdbc:mysql://192.168.0.7:3306/tfenergy?useUnicode=true&characterEncoding=UTF-8&zeroDateTimeBehavior=convertToNull&allowMultiQueries=true
-            # sql is update
-          password: root
+    password: root
   jpa:
     hibernate:
       ddl-auto: update
@@ -30,6 +16,10 @@ spring:
 eureka:
   instance:
     hostname: localhost
+    #2秒向注册中心eureka发送心跳-如果没有发送即从注册中心剔除
+    lease-expiration-duration-in-seconds: 2
+    #1秒和注册中心交互发送心跳
+    lease-renewal-interval-in-seconds: 1
   client:
     service-url:
-      defaultZone: http://localhost:8762/eureka/
+      defaultZone: http://localhost:8761/eureka/

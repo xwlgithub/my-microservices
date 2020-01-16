@@ -19,12 +19,10 @@ public class EnterFeignException implements EnterFeign {
      * 查询失败!->熔断器响应提升信息给前端看
      * @return
      */
-    public List<User> selectAll(){
+    @Override
+    public User selectAll(String id) {
         User user=new User();
-        List<User> userList=new ArrayList<>();
-        user.setName("shibai");
-        userList.add(user);
-        return userList;
-
+        user.setName("失败");
+        return user;
     }
 }

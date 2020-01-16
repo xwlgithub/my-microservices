@@ -11,3 +11,6 @@ eureka:
     fetch-registry: false
   instance:
     hostname: localhost
+    #不进行注册中心自我保护机制
+  server:
+    enable-self-preservation: false

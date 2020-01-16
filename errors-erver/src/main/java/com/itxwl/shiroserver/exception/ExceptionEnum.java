@@ -16,7 +16,8 @@ public enum ExceptionEnum {
     SUCCESS("success",200),
     NOT_LOGIN("请登录后再访问",401),
     SHIRO_UNDEFINED("权限不足",401),
-    AUTH_ROLE_WITH_EXCEPTION("分配权限异常",500)
+    AUTH_ROLE_WITH_EXCEPTION("分配权限异常",500),
+    TOCKEN_IS_NOTHAVE("请登录再访问",400)
     ;
     //异常信息existence
     private String message;

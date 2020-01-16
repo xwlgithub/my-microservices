@@ -12,7 +12,6 @@
         <module name="eureka-server" />
         <module name="getout-server" />
         <module name="shiro-server" />
-        <module name="shiro-test" />
         <module name="zuul-server" />
       </profile>
     </annotationProcessing>
@@ -24,6 +23,7 @@
       <module name="eureka-server" target="1.8" />
       <module name="getout-server" target="1.8" />
       <module name="mongodb" target="1.5" />
+      <module name="seata-server" target="1.8" />
       <module name="security-server" target="1.8" />
       <module name="security-server-api" target="1.5" />
       <module name="securityserverapi" target="1.8" />
@@ -35,7 +35,10 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="elastic-search-server" options="-parameters" />
+      <module name="elastic-search-server" options="" />
+      <module name="enter-server" options="" />
+      <module name="getout-server" options="" />
+      <module name="seata-server" options="" />
       <module name="shiro-server" options="" />
     </option>
   </component>
