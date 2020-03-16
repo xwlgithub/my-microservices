@@ -5,12 +5,9 @@ import com.itxwl.shiroserver.exception.ExceptionResult;
 import com.itxwl.shiroserver.exception.MyException;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authz.AuthorizationException;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
-
-import static org.springframework.http.HttpStatus.UNAUTHORIZED;
 
 @ControllerAdvice
 public class  CommonExceptionHandler {
@@ -20,6 +17,7 @@ public class  CommonExceptionHandler {
         System.out.println("捕捉的运行时异常");
         return ResponseEntity.status(rn.getExceptionEnum().getStatus()).body(new ExceptionResult(rn.getExceptionEnum()));
     }
+
     @ExceptionHandler(value = AuthenticationException.class)
     public ResponseEntity<ExceptionResult> throwAuthenticationException(MyException rn){
         return ResponseEntity.status(rn.getExceptionEnum().getStatus()).body(new ExceptionResult(rn.getExceptionEnum()));

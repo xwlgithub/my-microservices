@@ -57,9 +57,13 @@
             <artifactId>spring-boot-starter-logging</artifactId>
         </dependency>
         <dependency>
-            <groupId>erroe-server</groupId>
-            <artifactId>error-server</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.itxwl</groupId>
+            <artifactId>shiro-server</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

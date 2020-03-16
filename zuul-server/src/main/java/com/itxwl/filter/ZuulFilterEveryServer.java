@@ -1,14 +1,12 @@
 package com.itxwl.filter;
 
-import com.itxwl.shiroserver.exception.ExceptionEnum;
-import com.itxwl.shiroserver.exception.MyException;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
-import com.netflix.zuul.exception.ZuulException;
 import org.springframework.stereotype.Component;
+import org.springframework.util.StringUtils;
 
 import javax.servlet.http.HttpServletRequest;
-import java.io.UnsupportedEncodingException;
+
 
 @Component
 public class ZuulFilterEveryServer extends ZuulFilter {
@@ -49,12 +47,18 @@ public class ZuulFilterEveryServer extends ZuulFilter {
     /**
      * 请求验证-判断请求头是否携带tocken
      * @return
-     * @throws MyException
+     * @throws
      */
     @Override
-    public Object run() throws MyException {
-//        RequestContext ctx = RequestContext.getCurrentContext();
-//        HttpServletRequest request = ctx.getRequest();
+    public Object run()  {
+        RequestContext ctx = RequestContext.getCurrentContext();
+        HttpServletRequest request = ctx.getRequest();
+        String accessTocken = request.getHeader("access_tocken");
+        if (StringUtils.isEmpty(accessTocken)){
+            throw  new RuntimeException("您还没未登录,无法访问,请登录");
+
+        }
+
 //        String tocken = request.getParameter("access_tocken");
 //        if (tocken==null||tocken.isEmpty()){
 //            throw  new MyException(ExceptionEnum.TOCKEN_IS_NOTHAVE);

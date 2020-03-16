@@ -20,6 +20,7 @@ zuul:
       path: /getout/**
       serviceId: getout-server
   prefix: /api #路由前缀
+  #错误响应配置时间
 hystrix:
   command:
     default:
@@ -27,6 +28,7 @@ hystrix:
         isolation:
           thread:
             timeoutInMilliseconds: 6000 #熔断响应时间
+  #ribbon超时配置 读取和等待时间都设置6秒
 ribbon:
   #熔断读取时间
   ReadTimeout: 60000

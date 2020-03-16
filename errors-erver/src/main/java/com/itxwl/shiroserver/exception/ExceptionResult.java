@@ -20,4 +20,9 @@ public class ExceptionResult {
         this.times=System.currentTimeMillis();
         this.tocken=tocken;
     }
+    public ExceptionResult(int errorStatus,String message) {
+        this.status=errorStatus;
+        this.messages=message;
+        this.times=System.currentTimeMillis();
+    }
 }
