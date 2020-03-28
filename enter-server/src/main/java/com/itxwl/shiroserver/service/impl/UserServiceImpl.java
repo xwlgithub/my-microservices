@@ -200,6 +200,7 @@ public class UserServiceImpl implements UserService {
     }
     //识别tocken 返回该用户所属权限信息
     @Override
+    @SuppressWarnings("all")
     public PermissionDto findUserPermissions(String tocken) {
         Claims analysis = jwtUtil.analysis(tocken);
         String id = analysis.getId();

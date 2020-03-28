@@ -1,6 +1,5 @@
 package com.itxwl.shiroserver.entiry;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;

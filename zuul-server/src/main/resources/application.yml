@@ -3,6 +3,16 @@ server:
 spring:
   application:
     name: zuul-server
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: root
+    url: jdbc:mysql://localhost:3306/myservers?characterEncoding=utf-8
+    # sql is update
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
 eureka:
   instance:
     hostname: localhost

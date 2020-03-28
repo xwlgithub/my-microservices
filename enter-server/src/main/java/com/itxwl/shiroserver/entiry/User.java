@@ -49,4 +49,7 @@ public class User  implements Serializable {
         this.phoneNumber=phoneNumber;
         this.remark=remark;
     }
+    public User(){
+
+    }
 }

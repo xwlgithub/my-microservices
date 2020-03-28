@@ -13,13 +13,14 @@ public class PermissionDto {
     private Set<String> points;
     private Set<String> apis;
 
-public PermissionDto(){
+    public PermissionDto() {
 
-}
-    public PermissionDto(Set<PermisssCode> permisssCodes,Set<String> points,Set<String> apis){
-        this.permisssCodes=permisssCodes;
-        this.points=points;
-        this.apis=apis;
+    }
+
+    public PermissionDto(Set<PermisssCode> permisssCodes, Set<String> points, Set<String> apis) {
+        this.permisssCodes = permisssCodes;
+        this.points = points;
+        this.apis = apis;
     }
 
 }

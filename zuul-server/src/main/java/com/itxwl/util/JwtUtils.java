@@ -16,18 +16,18 @@ import java.util.Map;
  */
 @Component
 @Data
-@ConfigurationProperties(prefix = "sp")
+@SuppressWarnings("all")
 public class JwtUtils {
     //签名私钥
-    private String key;
+    private String key=ParamEveryUtil.SIGN_NAME;
     //过期时间
-    private Long ttl;
+    //private Long ttl;
     public JwtUtils(){
 
     }
-    public JwtUtils(String key, Long ttl){
+    public JwtUtils(String key){
         this.key=key;
-        this.ttl=ttl;
+       // this.ttl=ttl;
     }
     /**
      * 认证tocken
@@ -36,9 +36,9 @@ public class JwtUtils {
      */
     public  String createJwt(String name, String password,Map<String,Object> map) {
         //设置失效时间
-        long now = System.currentTimeMillis();//当前毫秒
+        //long now = System.currentTimeMillis();//当前毫秒
         //签名 xuewenliang
-        long exp = now + ttl;
+       // long exp = now + ttl;
         JwtBuilder builder = Jwts.builder().setId(name)
                 .setSubject(password)
                 .setIssuedAt(new Date())
@@ -47,7 +47,7 @@ public class JwtUtils {
             builder.claim(stringObjectEntry.getKey(),stringObjectEntry.getValue());
         }
         //设置失效时间
-        builder.setExpiration(new Date(exp));
+        //builder.setExpiration(new Date(exp));
         String tocken = builder.compact();
         return tocken;
     }
@@ -59,6 +59,13 @@ public class JwtUtils {
 
         Claims ihrm = Jwts.parser().setSigningKey(key).parseClaimsJws(tocken).getBody();
         return ihrm;
+    }
+
+    public static void main(String[] args) {
+        Claims claims = new JwtUtils().parseJwt("eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiIxMTc4NTU2MzU5ODYwNDUzMzc2Iiwic3ViIjoiVHVlIE1hciAxNyAxNTozOTo0OCBDU1QgMjAyMCIsImlhdCI6MTU4NDQzMDc4OCwi6Jab5paH6ImvIjoiMTIzNDU2In0.3NS92N1Ckn4yc5B5M5kG3PHbE7KgmpSDnbrLeHnRP2o");
+        System.out.println(claims.getId());
+        System.out.println(claims.getIssuer());
+        System.out.println(claims.toString());
     }
 
 }
